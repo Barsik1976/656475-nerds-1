@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="wrapp-general">
-    	<header class="wrapp-catalog">
+      <header class="wrapp-catalog">
         <nav class="nav-header">
           <a class="logo-neds" href="index_nerds.html" title="логотип"></a>
           <ul class="menu-nav">
@@ -18,29 +18,31 @@
             <li><a href="#">Магазин</a></li>
             <li><a href="#index_nerds">Контакты</a></li>
           </ul>
-            <a class="basket" href="#">Корзина</a>
+          <a class="basket" href="#">Корзина</a>
         </nav>
           <h2 class="template-shop">Магазин готовых шаблонов</h2>
       </header>
-     	<main>
-     		<div class="container-inner">
-     			<section class="left-column">
-            <h2 class="visually-hidden">Выбор сайтов</h2>
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <fieldset>
-                  <legend class="subtitle">Стоимость</legend>
-                    <div class="range-filter">
-                      <div class="scale">
+      <main>
+        <div class="container-inner">
+        <section class="left-column">
+          <h2 class="visually-hidden">Выбор сайтов</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <fieldset>
+                <legend class="subtitle">Стоимость</legend>
+                  <div class="range-filter">
+                    <div class="scale">
+              </fieldset>
 
-                      </div>
-                    </div>
-                </fieldset>
-                <div class="filters">
-                  <fieldset class="grid-item">
-                    <legend class="subtitle">Сетка</legend>
-                    <ul>
+
+
+
+
+              <div class="filters">
+                <fieldset class="grid-item">
+                  <legend class="subtitle">Сетка</legend>
+                  	<ul>
                       <li class="filter-option">
-                        <input class="visually-hidden" type="radio" name="grid" value="adaptive" id="filter-adaptive">
+                       	<input class="visually-hidden" type="radio" name="grid" value="adaptive" id="filter-adaptive">
                         <label for="filter-adaptive" checked>Адаптивная</label>
                       </li>
                       <li class="filter-option">
@@ -52,9 +54,9 @@
                         <label for="filter-rubber">Резиновая</label>
                       </li>
                     </ul>
-                  </fieldset>
-                  <fieldset class="properties">
-                    <legend class="subtitle">Особенности</legend>
+                </fieldset>
+                <fieldset class="properties">
+                  <legend class="subtitle">Особенности</legend>
                     <ul>
                       <li class="filter-option">
                         <input class="visually-hidden" type="checkbox" name="slaider" value="slider" id="filter-slider">
@@ -77,80 +79,144 @@
                         <label for="filter-basket">Корзина</label>
                       </li>
                     </ul>
-                  </fieldset>
-                  <input class="btn-show" type="submit" value="Показать">
-              </form>
+                </fieldset>
+                <input class="btn-show" type="submit" value="Показать">
+            </form>
             </section>
             <div class="right-column">
-            	<section class="banners-list">
+              <div class="sort-category">
+                <h3>Сортировать:</h3>
+                <ul class="category-type">
+                  <li><a href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По названию</a></li>
+                </ul>
+              <div class="arrows">
+                <a class="arrow-down" href="#" title="по убыванию"></a>
+                <a class="arrow-up" href="#" title="по возрастанию"></a>
+              </div>
+              </div>
+              <section class="banners-list">
               	<h3 class="visually-hidden">Каталог сайтов</h3>
                	<ul class="site-list">
                  	<li class="site-item">
                     <a class="banners-sedona" href="#" title="седона"></a>
-                    <div class="banner-info">
+                   	<div class="banner-info">
                       <h4 class="product-zag">Sedona</h4>
                       <p class="product-p">Информационный сайт<br>для туристов</p>
                       <a href="#" class="price-sort">9 900 руб.</a>
                   	</div>
-                 	</li>
-                 	<li class="site-item">
-                   	<a class="banners-pink" href="#" title="пинк"></a>
-                   	<div class="banner-info">
+                 </li>
+                 <li class="site-item">
+                   <a class="banners-pink" href="#" title="пинк"></a>
+                   <div class="banner-info">
                       <h4 class="product-zag">Pink app</h4>
                       <p class="product-p">Продуктовый лендинг<br>приложения для iOS и Android</p>
                       <a href="#" class="price-sort">9 900 руб.</a>
-                  	</div>
-                 	</li>
-                 	<li class="site-item">
+                  </div>
+                 </li>
+                 <li class="site-item">
                    	<a class="banners-barbershop" href="#" title="барбершоп"></a>
                    	<div class="banner-info">
                       <h4 class="product-zag">Barbershop</h4>
                       <p class="product-p">Сайт салоны красоты. Для мужчин, да</p>
                       <a href="#" class="price-sort">9 900 руб.</a>
                   	</div>
-                 	</li>
-                	<li class="site-item">
+                 </li>
+                 <li class="site-item">
                    	<a class="banners-mishka" href="#" title="мишка"></a>
                    	<div class="banner-info">
                       <h4 class="product-zag">Mishka</h4>
                       <p class="product-p">Интернет-магазин вязаных игрушек</p>
                       <a href="#" class="price-sort">9 900 руб.</a>
                   	</div>
-                 	</li>
-                 	<li class="site-item">
+                 </li>
+                 <li class="site-item">
                    	<a class="banners-a" href="#" title="а+"></a>
                    	<div class="banner-info">
                       <h4 class="product-zag">A+</h4>
                       <p class="product-p">Лендинг курсов повышения<br>квалификации</p>
                       <a href="#" class="price-sort">9 900 руб.</a>
                   	</div>
-                 	</li>
-                 	<li class="site-item">
+                 </li>
+                 <li class="site-item">
                    	<a class="banners-kvast" href="#" title="кваст"></a>
                    	<div class="banner-info">
                       <h4 class="product-zag">Кваст</h4>
                       <p class="product-p">Промо-сайт производителя<br>крафтового кваса</p>
                       <a href="#" class="price-sort">9 900 руб.</a>
                   	</div>
-                 	</li>
+                 </li>
                 </ul>
               </section>
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="href="#page1.html">1</a>
+                  <aria-label="Переход на страницу 1"></label>
+                </li>
+                <li class="pagination-item">
+                  <a href="#page2.html" aria-label="Переход на страницу 2">2</a>
+                </li> 
+                <li class="pagination-item">
+                  <a href="#page3.html" aria-label="Переход на страницу 3">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="next" href="#next.html" aria-label="Переход на следующую страницу">Следующая</a>
+                </li>
+              </ul>
+          <section>
+            
+          </section>
+
+      </main>
+      <footer>
+        <section class="map-nerds">
+          <h2 class="visually-hidden">Напишите нам</h2>
+          <div class="container">
+            <div class="wrapp-address"> 
+              <h3>Nerds designe studio</h3>
+              <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p> 
+              <p class="adress-phone">тел. +7 (812) 275-75-75</p>
+              <a class="btn-writeus" href="#letter" title="напишите нам">Напишите нам</a>
             </div>
-     		</div>
-     	</main>
-     	<footer>
-  			<div class="social-network">
-        	<ul class="logo-network">
-          	<li><a class="footer-vkontakte" href="#vkontakte" title="Мы в контакте"></a></li>
-          	<li><a class="footer-facebook" href="#facebook" title="Мы в фейсбуке"></a></li>
-          	<li><a class="footer-instagram" href="#instagram" title="Мы в инстаграм"></a></li>
-        	</ul>
-        	<article class="be-friends">
-          	<h3 class="footer-slogan">Давайте дружить, это выгодно!</h3>
-          	<p>Скидка 10% для друзей из социальных сетей.</p>
-        	</article>
+          </div>
+          <a class="pointer-nerds" href="#" title="месторасположение нердс"></a>
+        </section>
+        <div class="social-network">
+          <ul class="logo-network">
+            <li><a class="footer-vkontakte" href="#vkontakte" title="Мы в контакте"></a></li>
+            <li><a class="footer-facebook" href="#facebook" title="Мы в фейсбуке"></a></li>
+            <li><a class="footer-instagram" href="#instagram" title="Мы в инстаграм"></a></li>
+          </ul>
+          <article class="be-friends">
+            <h3 class="footer-slogan">Давайте дружить, это выгодно!</h3>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </article>
+        </div>
+      </footer>
+      <section class="modal-writeus">
+        <div class="write-us">
+          <button class="modal-close" type="button">Закрыть</button>
+          <h2>Напишите нам</h2>
+          <form action="#">
+            <div class="fields-anketa">
+              <p>
+                <label for="name">Ваше имя:</label>
+                <input id="name" name="name" type="text" placeholder="Имя Фамилия">
+              </p>
+              <p class="text-anketa">
+                <label for="name">Ваш e-mail:</label>
+                <input id="mail" name="mail" type="text" placeholder="email@example.com">
+              </p>
+            </div>
+            <p>
+              <label for="text-letter">Текст письма:</label>
+              <textarea id="text-letter" name="text-letter" type="text" placeholder="В свободной форме"></textarea>
+            </p>
+            <input class="btn-writeus btn-send" type="submit" value="Отправить">
+        	</form>
       	</div>
-    	</footer>
+    	</section>
     </div>
- 	</body>
+  </body>
 </html>
