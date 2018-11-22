@@ -1,0 +1,107 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #eeeeee;
+}
+
+h5 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+fieldset {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+img {
+  margin: 0px;
+  padding: 0px;
+}
+
+fieldset {
+  margin: 0px;
+  padding: 0px;
+}
+
+label {
+  margin: 0;
+}
+
+input {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+@font-face {
+	font-family: "roboto";
+	src: url("../fonts/roboto.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Robotobold";
+	src: url("../fonts/robotobold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Robotomedium";
+	src: url("../fonts/robotomedium.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
