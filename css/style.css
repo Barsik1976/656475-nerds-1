@@ -54,6 +54,10 @@ h2 {
   margin: 0;
 }
 
+h4 {
+  margin: 0;
+}
+
 hr {
   margin: 0;
 }
@@ -855,6 +859,7 @@ fieldset.properties {
 }
 
 .site-item {
+	position: relative;
   margin-bottom: 32px;
 }
 
@@ -933,9 +938,10 @@ fieldset.properties {
 
 .banner-info {
   display: none;
-  top: 900px;
+  position: absolute;
+  bottom: 0px;
   width: 360px;
-  min-height: 230px;
+  height: 230px;
   font-family: "Roboto", sans-serif;
   background-color: #eeeeee;
   text-align: center;
@@ -947,6 +953,13 @@ fieldset.properties {
   text-transform: uppercase;
   color: #000000;
   margin-top: 35px;
+}
+
+.price {
+	position: absolute;
+	top: 74px;
+	margin-left: 80px;
+  margin-right: ;
 }
 
 .product-p {
@@ -968,8 +981,7 @@ div .price-sort {
   border-radius: 5px;
   text-align: center;
   background-color: #fb565a;
-  margin-left: 80px;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .price-sort:hover {
@@ -979,8 +991,6 @@ div .price-sort {
 .price-sort:active {
   background-color: #d7373b;
 }
-
-
 
 .pagination {
   display: flex;
@@ -1194,6 +1204,7 @@ div .price-sort {
 
 
 .modal-writeus {
+	display: block;
   position: fixed;
   top: 50%;
   left: 50%;
