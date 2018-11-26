@@ -202,17 +202,16 @@
             <li><a class="footer-facebook" href="#facebook" title="Мы в фейсбуке"></a></li>
             <li><a class="footer-instagram" href="#instagram" title="Мы в инстаграм"></a></li>
           </ul>
-          <article class="be-friends">
+          <section class="be-friends">
             <h3 class="footer-slogan">Давайте дружить, это выгодно!</h3>
             <p>Скидка 10% для друзей из социальных сетей.</p>
-          </article>
+          </section>
         </div>
       </footer>
-      <section class="modal-writeus">
-        <div class="write-us">
-          <button class="modal-close" type="button">Закрыть</button>
-          <h2>Напишите нам</h2>
-          <form action="#">
+      <section class="write-us">
+        <h3>Напишите нам</h3>
+          <button class="modal-close" aria-label="Close"></button>
+          <form action="#" method="post">
             <div class="fields-anketa">
               <p>
                 <label for="name">Ваше имя:</label>
@@ -223,13 +222,10 @@
                 <input id="mail" name="mail" type="text" placeholder="email@example.com">
               </p>
             </div>
-            <p>
-              <label for="text-letter">Текст письма:</label>
-              <textarea id="text-letter" name="text-letter" type="text" placeholder="В свободной форме"></textarea>
-            </p>
+            <p>Текст письма:</p>
+            <p><textarea name="text" placeholder="В свободной форме"></textarea></p>
             <input class="btn-writeus btn-send" type="submit" value="Отправить">
-        	</form>
-      	</div>
+          </form>
     	</section>
     </div>
   </body>
