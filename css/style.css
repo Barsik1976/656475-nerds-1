@@ -527,14 +527,7 @@ td span {
   opacity: 0.08;
 }
 
-.line-vertical {
-  display: block;
-  border: none;
-  width: 4px;
-  height: 52px;
-  background-color: #eeeeee;
-  margin: 0;
-}
+
 
 
 /* Catalog-page */
@@ -879,7 +872,7 @@ fieldset.properties {
 /* Прайс на баннере */
 
 .banner-info {
-  display: block;
+  display: none;
   position: absolute;
   bottom: 0px;
   width: 360px;
@@ -897,9 +890,15 @@ fieldset.properties {
   margin-top: 35px;
 }
 
+.product-zag a {
+  display: block;
+}
+
 .price {
 	position: absolute;
 	top: 74px;
+  right: 40px;
+  left: 40px;
 }
 
 .price p {
@@ -922,7 +921,7 @@ div .price-sort {
   text-align: center;
   background-color: #fb565a;
   margin-top: 30px;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 .price-sort:hover {
