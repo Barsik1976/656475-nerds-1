@@ -117,7 +117,7 @@ font-style: normal;
 }
 
 
-.wrapp-general {
+.wrap-general {
   width: 1440px;
   margin: 0 auto;
 }
@@ -129,7 +129,7 @@ font-style: normal;
 
 /* Index-page */
 
-.wrapp-index {
+.wrap-index {
   position: relative;
   min-height: 545px;
   padding-left: 0px;
@@ -146,18 +146,11 @@ font-style: normal;
   margin-right: 140px;
 }
 
-.logo-neds {
-  display: block;
-  background-image: url(../img/nerds-logo.svg);
-  width: 160px;
-  height: 65px;
-}
-
-.logo-neds:hover {
+.logo:hover {
   opacity: 0.6;
 }
 
-.logo-neds:active {
+.logo:active {
   opacity: 0.2;
 }
 
@@ -187,7 +180,7 @@ font-style: normal;
   padding-bottom: 10px;
 }
 
-.basket {
+.cart {
   display: block;
   position: absolute;
   right: 140px;
@@ -198,17 +191,17 @@ font-style: normal;
   color: #000000;
 }
 
-.basket:hover {
+.cart:hover {
   color: #fb565a;
 }
 
-.basket:active {
+.cart:active {
   color: #000000;
   border-bottom: 2px #fb565a solid;
   padding-bottom: 10px;
 }
 
-.basket::before {
+.cart::before {
   content: url("../img/cart.svg");
   margin-right: 26px;
   opacity: 0.3;
@@ -225,7 +218,7 @@ font-style: normal;
   bottom: 0;
 }
 
-.wrapp-index section {
+.wrap-index section {
   margin-left: 140px;
 }
 
@@ -288,7 +281,7 @@ font-style: normal;
   padding-bottom: 117px;
 }
 
-.wrapp-catalog {
+.wrap-catalog {
   position: relative;
   padding-left: 0px;
   padding-right: 0px;
@@ -302,7 +295,7 @@ font-style: normal;
 
 /* Index-page */
 
-.wrapp-order {
+.wrap-order {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -413,7 +406,7 @@ hr {
   overflow: hidden;
 }
 
-.wrapp-aboutstudio {
+.wrap-aboutstudio {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -449,7 +442,7 @@ hr {
   margin-bottom: 34px;
 }
 
-.wrapp-aboutstudio h5 {
+.wrap-aboutstudio h5 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -510,7 +503,7 @@ th span {
 
 /* Блок ссылки-сайты */
 
-.wrapp-sites {
+.wrap-sites {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -521,15 +514,15 @@ th span {
   align-items: center;
 }
 
-.wrapp-sites a {
+.wrap-sites a {
   opacity: 0.2;
 }
 
-.wrapp-sites a:hover {
+.wrap-sites a:hover {
   opacity: 1;
 }
 
-.wrapp-sites a:active {
+.wrap-sites a:active {
   opacity: 0.08;
 }
 
@@ -1078,12 +1071,12 @@ div .price-sort {
   margin-top: 53px;
 }
 
-.wrapp-address {
+.wrap-address {
   padding-top: 55px;
   padding-left: 50px;
 }
 
-.wrapp-address h3 {
+.wrap-address h3 {
   font-family: "Robotobold", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1091,7 +1084,7 @@ div .price-sort {
   margin-bottom: 34px;
 }
 
-.wrapp-address p {
+.wrap-address p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -1221,7 +1214,7 @@ div .price-sort {
 }
 
 .write-us {
-	display: block;
+	display: none;
   position: fixed;
   left: auto;
   right: auto;
@@ -1322,10 +1315,6 @@ p {
   padding-top: 12px;
   padding-right: 14px;
   padding-bottom: 12px;
-}
-
-.cell-mail {
-
 }
 
 .write-us input:placeholder,
