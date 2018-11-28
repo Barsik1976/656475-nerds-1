@@ -146,11 +146,11 @@ font-style: normal;
   margin-right: 140px;
 }
 
-.logo:hover {
+.main-header-logo:hover {
   opacity: 0.6;
 }
 
-.logo:active {
+.main-header-logo:active {
   opacity: 0.2;
 }
 
