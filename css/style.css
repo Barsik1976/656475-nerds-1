@@ -479,26 +479,27 @@ hr {
   text-align: left;
 }
 
-th {
+td {
   font-family: "Robotobold", sans-serif;
   font-size: 45px;
   font-weight: 800;
 }
 
-.table-percentn td {
+th {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
+  padding-top: 20px;
 }
 
-th span {
+.table-percentn th {
+  font-size: 16px;
+}
+
+td span {
   display: inline-block;
   font-size: 80%;
 }
 
-.table-percent td {
-  padding-top: 28px;
-}
 
 
 /* Блок ссылки-сайты */
@@ -524,34 +525,6 @@ th span {
 
 .wrap-sites a:active {
   opacity: 0.08;
-}
-
-.site-academy {
-  background-image: url("../img/project1.png");
-  background-repeat: no-repeat;
-  width: 199px;
-  height: 68px;
-}
-
-.site-barbershop {
-  background-image: url("../img/project2.png");
-  background-repeat: no-repeat;
-  width: 206px;
-  height: 86px;
-}
-
-.site-pink {
-  background-image: url("../img/project3.png");
-  background-repeat: no-repeat;
-  width: 184px;
-  height: 50px;
-}
-
-.site-mishka {
-  background-image: url("../img/project4.png");
-  background-repeat: no-repeat;
-  width: 170px;
-  height: 83px;
 }
 
 .line-vertical {
@@ -894,50 +867,19 @@ fieldset.properties {
   position: absolute;
 }
 
-.banners-sedona {
-  background-image: url("../img/product1.jpg");
-  background-repeat: no-repeat;
+.banners-item {
   border: 2px #e5e5e5 solid;
 }
 
-.banners-pink {
-  background-image: url("../img/product2.jpg");
-  background-repeat: no-repeat;
+.banners-item:hover {
   border: 2px #e5e5e5 solid;
 }
-
-.banners-barbershop {
-  background-image: url("../img/product3.jpg");
-  background-repeat: no-repeat;
-  border: 2px #e5e5e5 solid;
-}
-
-.banners-mishka {
-  background-image: url("../img/product4.jpg");
-  background-repeat: no-repeat;
-  border: 2px #e5e5e5 solid;
-}
-
-.banners-a {
-  background-image: url("../img/product5.jpg");
-  background-repeat: no-repeat;
-  border: 2px #e5e5e5 solid;
-}
-
-.banners-kvast {
-  background-image: url("../img/product6.jpg");
-  background-repeat: no-repeat;
-  border: 2px #e5e5e5 solid;
-}
-
-
 
 
 /* Прайс на баннере */
 
-
 .banner-info {
-  display: none;
+  display: block;
   position: absolute;
   bottom: 0px;
   width: 360px;
@@ -958,11 +900,9 @@ fieldset.properties {
 .price {
 	position: absolute;
 	top: 74px;
-	margin-left: 80px;
-  margin-right: ;
 }
 
-.product-p {
+.price p {
   font-size: 16px;
   font-weight: normal;
   color: #666666;
@@ -982,6 +922,7 @@ div .price-sort {
   text-align: center;
   background-color: #fb565a;
   margin-top: 30px;
+  margin-left: 80px;
 }
 
 .price-sort:hover {
@@ -1053,30 +994,22 @@ div .price-sort {
 
 .map {
   position: relative;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 1440px;
-  height: 416px;
   margin: 0 auto;
   margin-top: 80px;
 }
 
 .container {
-  position: relative;
-  width: 320px;
-  height: 308px;
+  position: absolute;
+  width: 270px;
+  height: 253px;
   background-color: #ffffff;
   margin-left: 140px;
-  margin-top: 53px;
-}
-
-.wrap-address {
+  top: 54px;
   padding-top: 55px;
   padding-left: 50px;
 }
 
-.wrap-address h3 {
+.container h3 {
   font-family: "Robotobold", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1084,7 +1017,7 @@ div .price-sort {
   margin-bottom: 34px;
 }
 
-.wrap-address p {
+.container p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -1114,17 +1047,6 @@ div .price-sort {
 
 .btn-writeus:hover .write-us {
   display: block;
-}
-
-.pointer-nerds {
-  display: block;
-  position: absolute;
-  background-image: url(../img/map-marker.png);
-  background-repeat: no-repeat;
-  width: 155px;
-  height: 190px;
-  left: 820px;
-  top: 90px;
 }
 
 .social-network {
