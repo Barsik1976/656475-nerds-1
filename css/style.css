@@ -1135,7 +1135,7 @@ div .price-sort {
 }
 
 .write-us {
-	display: none;
+	display: block;
   position: fixed;
   left: auto;
   right: auto;
