@@ -932,7 +932,7 @@ div .price-sort {
   background-color: #d7373b;
 }
 
-.pagination {
+.pagination-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -955,7 +955,7 @@ div .price-sort {
   margin-right: 10px;
 }
 
-.pagination .next {
+.pagination-list .next {
   width: 260px;
   height: 50px;
   text-align: center;
@@ -975,7 +975,7 @@ div .price-sort {
 	border: 3px #dbdbdb solid;
 }
 
-.pagination .next:active {
+.pagination-list .next:active {
   width: 254px;
   height: 44px;
   line-height: 44px;
