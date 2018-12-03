@@ -75,8 +75,10 @@ font-style: normal;
   margin-right: 140px;
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover,
+.main-header-logo:focus {
   opacity: 0.6;
+  outline: none;
 }
 
 .main-header-logo:active {
@@ -101,8 +103,12 @@ font-style: normal;
   list-style: none;
 }
 
-.menu-nav a:hover {
+.menu-nav a:hover,
+.menu-nav a:focus,
+.cart:hover,
+.cart:focus {
   color: #fb565a;
+  outline: none;
 }
 
 .menu-nav a:active {
@@ -122,10 +128,6 @@ font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
   color: #000000;
-}
-
-.cart:hover {
-  color: #fb565a;
 }
 
 .cart:active {
@@ -192,14 +194,17 @@ font-style: normal;
   margin-top: 46px; 
 }
 
-.btn-more:hover {
-    background-color: #e74246;
+.btn-more:hover,
+.btn-more:focus {
+  background-color: #e74246;
+  outline: none;
 }
 
 .btn-more:active {
   color: #e37376;
   background-color: #d7373b;
 }
+
 
 /* Catalog-page */
 
@@ -282,9 +287,11 @@ font-style: normal;
   margin-top: 35px;
 }
 
-.btn-order1:hover {
+.btn-order1:hover,
+.btn-order1:focus {
   color: #ffffff;
   background-color: #e74246;
+  outline: none;
 }
 
 .btn-order1:active {
@@ -297,9 +304,11 @@ font-style: normal;
   margin-top: 35px;
 }
 
-.btn-order2:hover {
+.btn-order2:hover,
+.btn-order2:focus {
   color: #ffffff;
   background-color: #00bc6c;
+  outline: none;
 }
 
 .btn-order2:active {
@@ -312,9 +321,11 @@ font-style: normal;
   margin-top: 35px;
 }
 
-.btn-order3:hover {
+.btn-order3:hover,
+.btn-order3:focus {
   color: #ffffff;
   background-color: #eab534;
+  outline: none;
 }
 
 .btn-order3:active {
@@ -456,22 +467,22 @@ td span {
 }
 
 .wrap-sites a::before {
-  display: block;
+  display: inline-block;
   position: relative;
   content: '';
   border-left: 2px #eeeeee solid;
   height: 50px;
-  right: 50px;
-  top: 64px;
   opacity: 1;
 }
 
-.wrap-sites a::before:hover {
+.wrap-sites a::before {
   opacity: 1;
 }
 
-.wrap-sites a:hover {
+.wrap-sites a:hover,
+.wrap-sites a:focus {
   opacity: 1;
+  outline: none;
 }
 
 .wrap-sites a:active {
@@ -683,8 +694,10 @@ fieldset.properties {
   outline: 0;
 }
 
-.btn-show:hover {
+.btn-show:hover,
+.btn-show:focus {
   background-color: #dfdfdf;
+  outline: none;
 }
 
 .btn-show:active {
@@ -738,8 +751,10 @@ fieldset.properties {
   margin-right: 28px;
 }
 
-.category-type a:hover {
+.category-type a:hover,
+.category-type a:focus {
   color: #666666;
+  outline: none;
 }
 
 .category-type a:active {
@@ -757,8 +772,10 @@ fieldset.properties {
   opacity: 0.2;
 }
 
-.arrows a:hover {
+.arrows a:hover,
+.arrows a:focus {
   opacity: 0.5;
+  outline: none;
 }
 
 .arrows a:active {
@@ -812,7 +829,7 @@ fieldset.properties {
   height: 571px;
 }
 
-.site-item:before {
+.site-item::before {
   display: block;
   content: '';
   background-image: url("../img/browser.svg");
@@ -822,16 +839,19 @@ fieldset.properties {
   opacity: 0.2;
 }
 
-.site-item:hover {
+.site-item:hover,
+.site-item:focus {
   box-shadow: 0 0 8px 3px #e1e1e1;
   border: 2px none solid;
 }
 
-.site-item:hover::before {
+.site-item:hover::before,
+.site-item:focus::before {
   opacity: 1;
 }
 
-.site-item:hover .banner-info {
+.site-item:hover .banner-info,
+.site-item:focus .banner-info {
   display: block;
   position: absolute;
 }
@@ -840,7 +860,8 @@ fieldset.properties {
   border: 2px #e5e5e5 solid;
 }
 
-.banners-item:hover {
+.banners-item:hover,
+.banners-item:focus {
   border: 2px #e5e5e5 solid;
 }
 
@@ -900,8 +921,10 @@ div .price-sort {
   margin-left: 40px;
 }
 
-.price-sort:hover {
+.price-sort:hover,
+.price-sort:focus {
   background-color: #e74246;
+  outline: none;
 }
 
 .price-sort:active {
@@ -938,8 +961,10 @@ div .price-sort {
   text-align: center;
 }
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: #dfdfdf;
+  outline: none;
 }
 
 .pagination-item a:active {
@@ -1021,8 +1046,10 @@ div .price-sort {
   background-color: #fb565a;
 }
 
-.btn-writeus:hover .write-us {
+.btn-writeus:hover .write-us,
+.btn-writeus:focus .write-us {
   display: block;
+  outline: none;
 }
 
 .social-network {
@@ -1054,8 +1081,10 @@ div .price-sort {
   background-position: center;
 }
 
-.logo-network a:hover {
+.logo-network a:hover,
+.logo-network a:focus {
   background-color: #e74246;
+  outline: none;
 }
 
 .logo-network a:active {
