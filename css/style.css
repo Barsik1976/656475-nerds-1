@@ -455,6 +455,21 @@ td span {
   opacity: 0.2;
 }
 
+.wrap-sites a::before {
+  display: block;
+  position: relative;
+  content: '';
+  border-left: 2px #eeeeee solid;
+  height: 50px;
+  right: 50px;
+  top: 64px;
+  opacity: 1;
+}
+
+.wrap-sites a::before:hover {
+  opacity: 1;
+}
+
 .wrap-sites a:hover {
   opacity: 1;
 }
