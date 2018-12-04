@@ -25,21 +25,21 @@ a {
 
 @font-face {
 font-family: "Roboto";
-src: url("../fonts/roboto.woff") format("woff");
+src: url("../fonts/roboto.woff2") format("woff2");
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
 font-family: "Robotobold";
-src: url("../fonts/robotobold.woff") format("woff");
+src: url("../fonts/robotobold.woff2") format("woff2");
 font-weight: 800;
 font-style: normal;
 }
 
 @font-face {
 font-family: "Robotomedium";
-src: url("../fonts/robotomedium.woff") format("woff");
+src: url("../fonts/robotomedium.woff2") format("woff2");
 font-weight: 600;
 font-style: normal;
 }
@@ -1143,7 +1143,7 @@ div .price-sort {
 }
 
 .write-us {
-	display: none;
+  display: block;
   position: fixed;
   left: auto;
   right: auto;
