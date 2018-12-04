@@ -400,8 +400,9 @@ hr {
   margin-bottom: 34px;
 }
 
-.list-studio span {
+.list-studio::before {
   display: inline-block;
+  content: '—';
   color: #fb565a;
   margin-right: 10px;
 }
