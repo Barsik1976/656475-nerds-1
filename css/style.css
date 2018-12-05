@@ -604,6 +604,11 @@ td span {
   margin-top: 62px;
 }
 
+.range-filter {
+  width: 260px;
+  margin-top: 40px;
+}
+
 .filters label {
   position: relative;
 }
@@ -626,6 +631,94 @@ fieldset.grid-item {
 fieldset.properties {
   margin-bottom: 50px;
   padding: 0;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .subtitle {
@@ -838,7 +931,7 @@ fieldset.properties {
 
 .site-item::before {
   display: block;
-  content: '';
+  content: "";
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
   width: 360px;
@@ -899,8 +992,8 @@ fieldset.properties {
 }
 
 .price {
-	position: absolute;
-	top: 74px;
+  position: absolute;
+  top: 74px;
   right: 40px;
   left: 40px;
 }
@@ -975,13 +1068,13 @@ div .price-sort {
 }
 
 .pagination-item a:active {
-	width: 44px;
+  width: 44px;
   height: 44px;
   line-height: 44px;
   color: #000000;
   background-color: #ffffff;
   border-radius: 5px;
-	border: 3px #dbdbdb solid;
+  border: 3px #dbdbdb solid;
 }
 
 .pagination-list .next:active {
@@ -1145,16 +1238,19 @@ div .price-sort {
 /* Модальное окно Напишите нам */
 
 
+footer {
+  position: relative;
+}
+
 .modal-writeus {
-  
+  position: absolute;
 }
 
 .write-us {
   display: block;
   position: fixed;
-  left: auto;
-  right: auto;
-  bottom: 183px;
+    bottom: 183px;
+
   padding-top: 73px;
   padding-left: 100px;
   padding-right: 100px;
@@ -1165,8 +1261,8 @@ div .price-sort {
 }
 
 .btn-writeus:active .write-us:target {
-	display: block;
-	position: fixed;
+  display: block;
+  position: fixed;
 }
 
 .modal-close {
