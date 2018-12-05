@@ -473,17 +473,14 @@ td span {
   opacity: 0.2;
 }
 
-.wrap-sites a::before {
+.line-before:before {
   display: inline-block;
   position: relative;
-  content: '';
+  content: "";
   border-left: 2px #eeeeee solid;
   height: 50px;
-  opacity: 1;
-}
-
-.wrap-sites a::before {
-  opacity: 1;
+  float: left;
+  margin-right: 47px;
 }
 
 .wrap-sites a:hover,
