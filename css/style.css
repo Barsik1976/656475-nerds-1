@@ -452,6 +452,7 @@ td span {
 
 
 .wrap-line {
+  position: relative;
   margin-left: 140px;
   margin-right: 140px;  
   border-top: 2px #eeeeee solid;
@@ -478,12 +479,13 @@ td span {
 }
 
 .line-before::before {
+  display: inline-block;
+  position: absolute;
   content: "";
   border-left: 2px #eeeeee solid;
   height: 50px;
   float: left;
-  margin-right: 50px;
-  
+  top: 35%;
 }
 
 .wrap-sites > a > img:hover,
@@ -1241,23 +1243,20 @@ div .price-sort {
 /* Модальное окно Напишите нам */
 
 
-footer {
-  position: relative;
-}
-
 .modal-writeus {
-  position: absolute;
-  z-index: 10;
-  width: 960;
-  min-height: 590px;
-  background-color: #ffffff;
+  width: 960px;
+  height: 590px;
 }
 
 .write-us {
   display: block;
   position: fixed;
   bottom: 183px;
-  
+  padding-top: 73px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  background-color: #ffffff;
   box-shadow: 0 8px 50px 5px #595a5a;
   overflow: auto;
 }
