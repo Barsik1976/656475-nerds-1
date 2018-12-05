@@ -469,27 +469,33 @@ td span {
   align-items: center;
 }
 
-.wrap-sites a {
+.wrap-sites > a > img {
   opacity: 0.2;
 }
 
-.line-before:before {
-  display: inline-block;
-  position: relative;
+.line-before img {
+  opacity: 0.2;
+}
+
+.line-before::before {
   content: "";
   border-left: 2px #eeeeee solid;
   height: 50px;
   float: left;
-  margin-right: 47px;
+  margin-right: 50px;
+  
 }
 
-.wrap-sites a:hover,
-.wrap-sites a:focus {
+.wrap-sites > a > img:hover,
+.wrap-sites > a > img:focus,
+.line-before:hover img,
+.line-before:focus img {
   opacity: 1;
   outline: none;
 }
 
-.wrap-sites a:active {
+.wrap-sites > a > img:active,
+.line-before:active {
   opacity: 0.08;
 }
 
@@ -1241,18 +1247,17 @@ footer {
 
 .modal-writeus {
   position: absolute;
+  z-index: 10;
+  width: 960;
+  min-height: 590px;
+  background-color: #ffffff;
 }
 
 .write-us {
   display: block;
   position: fixed;
-    bottom: 183px;
-
-  padding-top: 73px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 84px;
-  background-color: #ffffff;
+  bottom: 183px;
+  
   box-shadow: 0 8px 50px 5px #595a5a;
   overflow: auto;
 }
