@@ -1243,11 +1243,6 @@ div .price-sort {
 /* Модальное окно Напишите нам */
 
 
-.modal-writeus {
-  width: 960px;
-  height: 590px;
-}
-
 .write-us {
   display: block;
   position: fixed;
