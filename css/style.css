@@ -26,21 +26,24 @@ a {
 @font-face {
 font-family: "Roboto";
 src: url("../fonts/roboto.woff2") format("woff2");
+src: url("../fonts/roboto.woff") format("woff");
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
-font-family: "Robotobold";
+font-family: "Roboto";
 src: url("../fonts/robotobold.woff2") format("woff2");
-font-weight: 800;
+src: url("../fonts/robotobold.woff") format("woff");
+font-weight: 700;
 font-style: normal;
 }
 
 @font-face {
-font-family: "Robotomedium";
+font-family: "Roboto";
 src: url("../fonts/robotomedium.woff2") format("woff2");
-font-weight: 600;
+src: url("../fonts/robotomedium.woff") format("woff");
+font-weight: 500;
 font-style: normal;
 }
 
@@ -91,7 +94,7 @@ font-style: normal;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   text-align: left;
@@ -125,7 +128,7 @@ font-style: normal;
   right: 140px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 }
@@ -162,7 +165,7 @@ font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 55px;
   line-height: 58px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
   text-align: left;
   margin-top: 86px;
@@ -172,7 +175,7 @@ font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
   text-align: left;
   margin-top: 29px;
@@ -185,7 +188,7 @@ font-style: normal;
   line-height: 50px;
   width: 240px;
   min-height: 50px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -212,7 +215,7 @@ font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 55px;
   line-height: 58px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
   text-align: center;
   margin-top: 85px;
@@ -252,7 +255,7 @@ font-style: normal;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 23px;
-  font-weight: 600;
+  font-weight: normal;
   color: #000000;
   text-align: left;
 }
@@ -278,7 +281,7 @@ font-style: normal;
   line-height: 50px;
   width: 160px;
   min-height: 50px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -351,7 +354,7 @@ font-style: normal;
   margin-left: 140px;
   margin-right: 140px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: normal;
   color: #000000;
   text-align: left;
   word-wrap: break-word;
@@ -366,6 +369,7 @@ font-style: normal;
 
 .about-studio h3 {
   font-size: 45px;
+  font-weight: 500;
   line-height: 48px;
   margin: 0;
   margin-bottom: 32px;
@@ -377,6 +381,7 @@ font-style: normal;
 }
 
 .about-studio h5 {
+  font-weight: 700;
   margin-top: 48px;
   margin-bottom: 34px;
 }
@@ -384,7 +389,7 @@ font-style: normal;
 .wrap-aboutstudio h5 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -395,7 +400,7 @@ font-style: normal;
 
 .list-studio::before {
   display: inline-block;
-  content: '—';
+  content: "—";
   color: #fb565a;
   margin-right: 10px;
 }
@@ -408,7 +413,6 @@ font-style: normal;
 
 .accuracy h5 {
   margin: 0;
-  margin-top: 
 }
 
 .logo-aboutstudio {
@@ -425,9 +429,9 @@ font-style: normal;
 }
 
 td {
-  font-family: "Robotobold", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 th {
@@ -699,21 +703,24 @@ fieldset.properties {
 }
 
 .price-controls {
-  font-size: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .price-controls label {
   display: inline-block;
-  width: 50%;
+  width: 260px;
   font-size: 16px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .price-controls input {
   width: 60px;
   padding: 8px 10px;
-  margin-left: 10px;
-  font-family: Roboto, Arial, sans-serif;
+  margin-left: 12px;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -727,9 +734,9 @@ fieldset.properties {
 }
 
 .subtitle {
-  font-family: "Robotobold", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 21px;
@@ -787,7 +794,7 @@ fieldset.properties {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 50px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -828,9 +835,9 @@ fieldset.properties {
 }
 
 .sort-category h3 {
-  font-family: "Robotobold", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: left;
   margin-top: 0;
@@ -923,7 +930,7 @@ fieldset.properties {
 }
 
 .site-item {
-	position: relative;
+  position: relative;
   margin-bottom: 32px;
 }
 
@@ -986,7 +993,7 @@ fieldset.properties {
 
 .product-zag {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   margin-top: 35px;
@@ -1041,7 +1048,7 @@ div .price-sort {
   flex-direction: row;
   justify-content: flex-start;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 50px;
   margin-top: 28px;
   font-size: 16px;
@@ -1116,9 +1123,9 @@ div .price-sort {
 }
 
 .container h3 {
-  font-family: "Robotobold", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 34px;
 }
@@ -1137,10 +1144,10 @@ div .price-sort {
 
 .btn-writeus {
   display: block;
-  font-family: "Robotomedium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 50px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   height: 50px;
   text-align: center;
@@ -1217,9 +1224,9 @@ div .price-sort {
 }
 
 .footer-slogan {
-  font-family: "Robotomedium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 12px;
   margin-top: 0;
 }
@@ -1254,6 +1261,7 @@ div .price-sort {
   background-color: #ffffff;
   box-shadow: 0 8px 50px 5px #595a5a;
   overflow: auto;
+  margin: auto;
 }
 
 .btn-writeus:active .write-us:target {
@@ -1278,10 +1286,10 @@ div .price-sort {
 }
 
 .write-us h3 {
-  font-family: "Robotomedium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
   color: #000000;
 }
@@ -1305,16 +1313,16 @@ p {
 
 .write-us label {
   display: block;
-  font-family: "Robotobold", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 9px;
 }
 
 .fields-anketa input {
-  font-family: "Robotomedium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   width: 328px;
   min-height: 46px;
   border: 2px #d7dcde solid;
@@ -1325,16 +1333,16 @@ p {
 }
 
 .write-us p {
-  font-family: "Robotobold", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 9px;
 }
 
 .write-us textarea {
-  font-family: "Robotomedium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   width: 728px;
   min-height: 90px;
   border: 2px #d7dcde solid;
