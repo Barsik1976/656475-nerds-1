@@ -9,6 +9,7 @@ body {
   padding: 0;
   text-align: left;
   list-style: none;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 img {
@@ -475,34 +476,33 @@ td span {
   list-style: none;
 }
 
+.wrap-sites li {
+  position: relative;
+}
+
 .wrap-sites > li > a > img {
   opacity: 0.2;
 }
 
-.line-before a {
-  opacity: 0.2;
-}
-
 .line-before::before {
-  display: inline-block;
   position: absolute;
   content: "";
-  border-left: 2px #eeeeee solid;
+  width: 2px;
   height: 50px;
-  float: left;
-  top: 35%;
+  background-color: #eeeeee;
+  top: -50px;
 }
 
-.wrap-sites > li > a >img:hover,
+.wrap-sites > li > a > img:hover,
 .wrap-sites > li > a > img:focus,
-.line-before:hover li,
-.line-before:focus li {
+.line-before > a:hover li,
+.line-before > a:focus li {
   opacity: 1;
   outline: none;
 }
 
 .wrap-sites > li > a > img:active,
-.line-before:active li {
+.line-before > a:active li {
   opacity: 0.08;
 }
 
