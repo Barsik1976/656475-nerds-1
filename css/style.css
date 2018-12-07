@@ -477,6 +477,7 @@ td span {
 
 .wrap-sites li {
   position: relative;
+  min-height: 90px;
 }
 
 .wrap-sites > li > a > img {
@@ -491,7 +492,7 @@ td span {
   height: 50px;
   background-color: #eeeeee;
   left: -50px;
-  top: 0;
+  top: 17px;
 }
 
 .wrap-sites > li > a > img:hover,
