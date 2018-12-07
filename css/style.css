@@ -1120,8 +1120,8 @@ div .price-sort {
   background-color: #ffffff;
   margin-left: 140px;
   top: 54px;
-  padding-top: 55px;
   padding-left: 50px;
+  padding-bottom: 47px;
 }
 
 .container h3 {
@@ -1129,6 +1129,7 @@ div .price-sort {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 54px;
   margin-bottom: 34px;
 }
 
