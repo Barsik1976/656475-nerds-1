@@ -1255,7 +1255,9 @@ div .price-sort {
 .write-us {
   display: block;
   position: fixed;
-  bottom: 183px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding-top: 73px;
   padding-left: 100px;
   padding-right: 100px;
