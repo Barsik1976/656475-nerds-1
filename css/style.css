@@ -457,7 +457,6 @@ td span {
 
 
 .wrap-line {
-  position: relative;
   margin-left: 140px;
   margin-right: 140px;  
   border-top: 2px #eeeeee solid;
@@ -485,12 +484,15 @@ td span {
 }
 
 .line-before::before {
+  display: block;
   position: absolute;
   content: "";
   width: 2px;
   height: 50px;
   background-color: #eeeeee;
-  top: -50px;
+  left: -50px;
+  bottom: 0;
+  vertical-align: middle;
 }
 
 .wrap-sites > li > a > img:hover,
