@@ -491,8 +491,7 @@ td span {
   height: 50px;
   background-color: #eeeeee;
   left: -50px;
-  bottom: 0;
-  vertical-align: middle;
+  top: 0;
 }
 
 .wrap-sites > li > a > img:hover,
