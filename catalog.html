@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrap-general">
-      <header class="wrap-catalog">
+    <header class="wrap-catalog">
+        <div class="wrap-general">
         <nav class="nav-header">
           <a class="main-header-logo" href="index.html" title="логотип нердс">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип нердс">
@@ -16,14 +16,15 @@
           <ul class="menu-nav">
             <li><a href="index.html">Студия</a></li>
             <li><a href="clientele.html">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
           <a class="cart" href="#">Корзина</a>
         </nav>
           <h2 class="template-shop">Магазин готовых шаблонов</h2>
+        </div>
       </header>
-      <main>
+      <main class="wrap-general">
         <div class="container-inner">
         <section class="left-column">
           <h2 class="visually-hidden">Выбор сайтов</h2>
@@ -44,7 +45,6 @@
                     </div>
                   </div>
               </fieldset>
-
               <div class="filters">
                 <fieldset class="grid-item">
                   <legend class="subtitle">Сетка</legend>
@@ -93,6 +93,7 @@
             </form>
             </section>
             <section class="right-column">
+              <h3 class="visually-hidden">Прайс сайтов</h3>
               <div class="sort-category">
                 <h3>Сортировать:</h3>
                 <ul class="category-type">
@@ -199,50 +200,32 @@
           </section>
         </div>
       </main>
-      <footer>
+       <footer>
         <section class="map">
           <a href="#" aria-label="офис студии нердс">
-            <img src="img/map.jpg" alt="офис студии нердс" width="1440">
+            <img src="img/map.jpg" alt="офис студии нердс" width="100%">
           </a>
-          <h2 class="visually-hidden">Напишите нам</h2>
-          <div class="container" >
-              <h3>Nerds designe studio</h3>
-              <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p> 
-              <p class="adress-phone">тел. +7 (812) 275-75-75</p>
-              <a class="btn-writeus" href="#letter" title="напишите нам">Напишите нам</a>
-          </div>
-        </section>
-        <div class="social-network">
-          <ul class="logo-network">
-            <li><a class="footer-vkontakte" href="#vkontakte" aria-label="Мы в контакте"></a></li>
-            <li><a class="footer-facebook" href="#facebook" aria-label="Мы в фейсбуке"></a></li>
-            <li><a class="footer-instagram" href="#instagram" aria-label="Мы в инстаграм"></a></li>
-          </ul>
-          <section class="be-friends">
-            <h3 class="footer-slogan">Давайте дружить, это выгодно!</h3>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
           </section>
-        </div>
+           <div class="wrap-general">
+              <div class="container">
+                <h3>Nerds designe studio</h3>
+                  <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p> 
+                  <p class="adress-phone">тел. +7 (812) 275-75-75</p>
+                  <a class="btn-writeus" href="#letter" title="напишите нам">Напишите нам</a>
+              </div>
+              <div class="social-network">
+                <ul class="logo-network">
+                  <li><a class="footer-vkontakte" href="#vkontakte" aria-label="Мы в контакте"></a>
+                  </li>
+                  <li><a class="footer-facebook" href="#facebook" aria-label="Мы в фейсбуке"></a></li>
+                  <li><a class="footer-instagram" href="#instagram" aria-label="Мы в инстаграм"></a></li>
+                </ul>
+              <section class="be-friends">
+                <h3 class="footer-slogan">Давайте дружить, это выгодно!</h3>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+              </section>
+              </div>
+          </div>
       </footer>
-       <section class="write-us">
-        <h3>Напишите нам</h3>
-          <button class="modal-close" aria-label="Close"></button>
-          <form action="#" method="post">
-            <div class="fields-anketa">
-              <p>
-                <label for="name">Ваше имя:</label>
-                <input id="name" name="name" type="text" placeholder="Имя Фамилия">
-              </p>
-              <p class="text-anketa">
-                <label for="name">Ваш e-mail:</label>
-                <input id="mail" name="mail" type="text" placeholder="email@example.com">
-              </p>
-            </div>
-            <p>Текст письма:</p>
-            <p><textarea name="text" placeholder="В свободной форме"></textarea></p>
-            <input class="btn-writeus btn-send" type="submit" value="Отправить">
-          </form>
-      </section>
-    </div>
   </body>
 </html>

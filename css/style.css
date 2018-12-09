@@ -36,6 +36,9 @@ body {
   text-align: left;
   list-style: none;
   font-family: "Roboto", "Arial", sans-serif;
+}
+
+input {
   font-family: inherit;
 }
 
@@ -49,10 +52,16 @@ a {
   color: #000000;
 }
 
+header {
+  background-color: #eeeeee;
+  width: 100%;
+}
+
 .wrap-general {
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
 }
+
 
 
 
@@ -66,7 +75,6 @@ a {
   min-height: 545px;
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #eeeeee;
 }
 
 .nav-header {
@@ -75,8 +83,8 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding-top: 50px;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .main-header-logo:hover,
@@ -125,8 +133,8 @@ a {
 
 .cart {
   display: block;
-  position: absolute;
-  right: 140px;
+  margin-left: 240px;
+  margin-right: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -141,7 +149,10 @@ a {
 }
 
 .cart::before {
+  display: inline-block;
   content: url("../img/cart.svg");
+  width: 15px;
+  height: 15px;
   margin-right: 26px;
   opacity: 0.3;
   align-items: center;
@@ -153,12 +164,12 @@ a {
   background-repeat: no-repeat;
   width: 698px;
   height: 412px;
-  left: 570px;
+  left: 450px;
   bottom: 0;
 }
 
 .wrap-index section {
-  margin-left: 140px;
+  margin-left: 20px;
 }
 
 .long-expensive {
@@ -243,8 +254,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 140px;
-  margin-right: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 80px;
 }
 
@@ -261,8 +272,23 @@ a {
   text-align: left;
 }
 
-.product img {
-  display: block;
+.product .product-1 {
+  background-image: url("../img/feature1.jpg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 146px;
+}
+
+.product .product-2 {
+  background-image: url("../img/feature2.jpg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 146px;
+}
+
+.product-3 {
+  background-image: url("../img/feature3.jpg");
+  background-repeat: no-repeat;
   width: 300px;
   height: 146px;
 }
@@ -352,8 +378,8 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: #000000;
@@ -457,8 +483,8 @@ td span {
 
 
 .wrap-line {
-  margin-left: 140px;
-  margin-right: 140px;  
+  margin-left: 20px;
+  margin-right: 29px;  
   border-top: 2px #eeeeee solid;
   border-bottom: 2px #eeeeee solid;
 }
@@ -531,7 +557,7 @@ td span {
 
 
 .left-column {
-  margin-left: 140px;
+  margin-left: 20px;
   margin-top: 60px;
 }
 
@@ -834,7 +860,7 @@ fieldset.properties {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 140px;
+  margin-right: 20px;
 }
 
 .sort-category h3 {
@@ -845,7 +871,7 @@ fieldset.properties {
   text-align: left;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 265px;
+  margin-right: 266px;
 }
 
 .category-type {
@@ -920,7 +946,7 @@ fieldset.properties {
   display: flex;
   justify-content: flex-start;
   margin-top: 60px;
-  margin-right: 140px;
+  margin-right: 20px;
 }
 
 .site-list {
@@ -1114,15 +1140,19 @@ div .price-sort {
   margin-top: 80px;
 }
 
+.map img {
+  width: 100%;
+}
+
 .container {
   position: absolute;
   width: 270px;
-  height: 253px;
+  height: 307px;
   background-color: #ffffff;
-  margin-left: 140px;
-  top: 54px;
+  top: 1897px;
   padding-left: 50px;
-  padding-bottom: 47px;
+  margin: 0;
+  margin-left: 20px;
 }
 
 .container h3 {
@@ -1176,8 +1206,8 @@ div .price-sort {
   align-items: center;
   margin-top: 70px;
   margin-bottom: 70px;
-  margin-left: 140px;
-  margin-right: 355px;
+  margin-left: 20px;
+  margin-right: 237px;
 }
 
 .logo-network {
