@@ -510,7 +510,11 @@ td span {
   opacity: 0.2;
 }
 
-.line-before::before {
+.wrap-sites li:first-child::before {
+  content: none;
+} 
+
+.wrap-sites li::before {
   display: block;
   position: absolute;
   content: "";
