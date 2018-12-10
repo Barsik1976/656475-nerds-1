@@ -514,7 +514,7 @@ td span {
 }
 
 
-.wrap-sites > li > a > img {
+.wrap-sites img {
   opacity: 0.2;
 }
 
@@ -533,16 +533,16 @@ td span {
   top: 17px;
 }
 
-.wrap-sites > li > a > img:hover,
-.wrap-sites > li > a > img:focus,
-.line-before > a:hover li,
-.line-before > a:focus li {
+.wrap-sites img:hover,
+.wrap-sites img:focus,
+.wrap-sites a:hover li,
+.wrap-sites a:focus li {
   opacity: 1;
   outline: none;
 }
 
-.wrap-sites > li > a > img:active,
-.line-before > a:active li {
+.wrap-sites img:active,
+.wrap-sites a:active li {
   opacity: 0.08;
 }
 
