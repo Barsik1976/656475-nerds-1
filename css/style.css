@@ -111,7 +111,8 @@ header {
   margin-left: 202px;
 }
 
-.menu-nav li {
+.menu-nav,
+.cart {
   list-style: none;
 }
 
@@ -134,7 +135,6 @@ header {
 .cart {
   display: block;
   margin-left: 240px;
-  margin-right: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -148,7 +148,7 @@ header {
   padding-bottom: 10px;
 }
 
-.cart::before {
+.cart a::before {
   display: inline-block;
   content: url("../img/cart.svg");
   width: 15px;
@@ -164,7 +164,7 @@ header {
   background-repeat: no-repeat;
   width: 698px;
   height: 412px;
-  left: 450px;
+  left: 572px;
   bottom: 0;
 }
 
@@ -255,7 +255,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 80px;
   margin-bottom: 80px;
 }
 
@@ -1155,7 +1155,7 @@ div .price-sort {
   background-color: #ffffff;
   top: 1897px;
   padding-left: 50px;
-  margin: 0;
+  margin-top: 54px;
   margin-left: 20px;
 }
 
