@@ -497,14 +497,22 @@ td span {
   margin-right: 43px;
   margin-top: 48px;
   margin-bottom: 48px;
-  align-items: center;
   list-style: none;
+}
+
+.wrap-sites a {
+  display: block;
+  outline: 2px red solid;
+  height: 100%;
 }
 
 .wrap-sites li {
   position: relative;
   min-height: 90px;
+  align-items: center;
+  outline: 2px green solid;
 }
+
 
 .wrap-sites > li > a > img {
   opacity: 0.2;
