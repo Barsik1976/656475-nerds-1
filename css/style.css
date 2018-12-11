@@ -158,40 +158,46 @@ header {
   align-items: center;
 }
 
-.slider-phone {
-  position: absolute;
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  width: 698px;
-  height: 412px;
-  left: 572px;
-  bottom: 0;
-}
-
 .wrap-index section {
   margin-left: 20px;
 }
 
-.long-expensive {
+.sliders {
+  list-style: none;
+  text-align: left;
+  margin-top: 86px;
+  margin-left: 20px;
+  background-color: #eeeeee;
+} 
+
+.slider-phone h2 {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 55px;
   line-height: 58px;
   font-weight: 500;
   color: #000000;
-  text-align: left;
-  margin-top: 86px;
+  margin: 0;
 }
 
-.long-tekst {
+.slider-phone p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   color: #000000;
-  text-align: left;
   margin-top: 29px;
 }
+
+.slider-phone img {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  width: 698px;
+  height: 412px;
+  bottom: 0;
+}
+
+
 
 .btn-more {
   display: block;
