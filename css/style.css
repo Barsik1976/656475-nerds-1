@@ -163,18 +163,17 @@ header {
 }
 
 .sliders {
+  position: relative;
   text-align: left;
   margin-top: 86px;
   margin-left: 20px;
-}
-
-.sliders ul {
-  position: relative;
   list-style: none;
 }
 
 .sliders h2 {
   display: block;
+  position: relative;
+  z-index: 10;
   font-family: "Roboto", sans-serif;
   font-size: 55px;
   line-height: 58px;
@@ -192,40 +191,38 @@ header {
   margin-top: 29px;
 }
 
-.sliders div {
+.slider-1::after {
+  display: block;
   position: absolute;
-}
-
-.slider-1 {
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
+  content: url("../img/slide1.png");
   background-color: #eeeeee;
   width: 698px;
   height: 412px;
-  top: -72px;
   left: 430px;
+  bottom: -50px;
 }
 
-.slider-2 {
-  background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
+.slider-2::after {
+  display: block;
+  position: absolute;
+  content: url("../img/slide2.png");
   background-color: #eeeeee;
   width: 663px;
   height: 428px;
-  top: -72px;
-  left: 497px;
+  left: 500px;
+  bottom: -50px;
 }
 
-.slider-3 {
-  background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
+.slider-3::after {
+  display: block;
+  position: absolute;
+  content: url("../img/slide3.png");
   background-color: #eeeeee;
   width: 760px;
   height: 412px;
   top: -70px;
-  left: 405px;
+  left: 400px;
 }
-
 
 .btn-more {
   display: block;
