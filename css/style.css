@@ -1173,8 +1173,11 @@ div .price-sort {
 /* Index-page */
 
 
-.map {
+footer .wrap-general {
   position: relative;
+}
+
+.map {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   width: 100%;
@@ -1191,10 +1194,9 @@ div .price-sort {
   width: 270px;
   height: 307px;
   background-color: #ffffff;
-  top: 1897px;
   padding-left: 50px;
-  margin-top: 54px;
-  margin-left: 20px;
+  top: -430px;
+  left: 20px;
 }
 
 .container h3 {
