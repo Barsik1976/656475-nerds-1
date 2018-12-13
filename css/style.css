@@ -123,8 +123,8 @@ header {
 
 .menu-nav a:hover,
 .menu-nav a:focus,
-.cart:hover,
-.cart:focus {
+.cart a:hover,
+.cart a:focus {
   color: #fb565a;
   outline: none;
 }
@@ -141,25 +141,28 @@ header {
 }
 
 .cart {
-  display: block;
-  margin-left: 240px;
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
+  padding-bottom: 12px;
+  margin-left: 286px;
 }
 
 .cart a:active {
   color: #a6a6a6;
 }
 
-.cart a::before {
+.cart::before {
   display: inline-block;
+  position: absolute;
   content: url("../img/cart.svg");
   width: 15px;
   height: 15px;
-  margin-right: 26px;
+  top: 34px;
+  left: -41px;
   opacity: 0.3;
   align-items: center;
 }
