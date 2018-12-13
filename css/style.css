@@ -779,7 +779,7 @@ fieldset.properties {
   opacity: 0.4;
 }
 
-.filters-item input + label::before:active {
+.filters-item input + label:hover::before{
   opacity: 1;
 }
 
