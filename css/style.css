@@ -87,6 +87,14 @@ header {
   margin-right: 20px;
 }
 
+.wrap-index ul {
+  padding-top: 33px;
+}
+
+.wrap-catalog ul {
+  padding-top: 33px;
+}
+
 .main-header-logo:hover,
 .main-header-logo:focus {
   opacity: 0.6;
@@ -125,7 +133,10 @@ header {
 }
 
 .menu-nav a:active {
-  display: block;
+  color: #a6a6a6;
+}
+
+.menu-active {
   display: block;
   color: #000000;
   border-bottom: 2px #fb565a solid;
@@ -142,10 +153,8 @@ header {
   color: #000000;
 }
 
-.cart:active {
-  color: #000000;
-  border-bottom: 2px #fb565a solid;
-  padding-bottom: 10px;
+.cart a:active {
+  color: #a6a6a6;
 }
 
 .cart a::before {
@@ -161,6 +170,11 @@ header {
 .wrap-index section {
   margin-left: 20px;
 }
+
+
+
+/* Блок Слайдеры */
+
 
 .sliders {
   position: relative;
