@@ -87,11 +87,8 @@ header {
   margin-right: 20px;
 }
 
-.wrap-index ul {
-  padding-top: 33px;
-}
-
-.wrap-catalog ul {
+.menu-nav,
+.cart {
   padding-top: 33px;
 }
 
@@ -886,6 +883,10 @@ fieldset.properties {
 }
 
 .category-type a:active {
+  color: #000000;
+}
+
+.category-type-active {
   color: #000000;
 }
 
