@@ -529,7 +529,7 @@ td span {
 
 .wrap-line {
   margin-left: 20px;
-  margin-right: 29px;  
+  margin-right: 29px;
   border-top: 2px #eeeeee solid;
   border-bottom: 2px #eeeeee solid;
 }
@@ -1161,20 +1161,30 @@ div .price-sort {
 /* Index-page */
 
 
-footer .wrap-general {
+
+
+.wrap-map {
   position: relative;
 }
 
-.map {
+.map-1, .map-2 {
+  position: absolute;
+  top: 80px;
+}
+
+.map-1 {
+  left: calc(50% - 600px);
+}
+
+.map-2 {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  margin-top: 80px;
 }
 
-.map img {
-  margin: 0 auto;
+footer .wrap-general {
+  position: relative;
 }
 
 .container {
@@ -1183,7 +1193,7 @@ footer .wrap-general {
   height: 307px;
   background-color: #ffffff;
   padding-left: 50px;
-  top: -430px;
+  top: 134px;
   left: 20px;
 }
 
@@ -1231,15 +1241,16 @@ footer .wrap-general {
 }
 
 .social-network {
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  margin-top: 70px;
+  top: 485px;
   margin-bottom: 70px;
-  margin-left: 20px;
-  margin-right: 237px;
+  left: 20px;
+  right: 237px;
 }
 
 .logo-network {
@@ -1317,7 +1328,7 @@ footer .wrap-general {
 
 
 .write-us {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
