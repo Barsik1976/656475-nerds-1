@@ -44,7 +44,6 @@ input {
 
 img {
   max-width: 100%;
-  height: auto;
   margin: 0;
 }
 
@@ -1181,21 +1180,20 @@ div .price-sort {
   position: relative;
 }
 
-.map-1, .map-2 {
+.map-1 {
   position: absolute;
   top: 80px;
-}
-
-.map-1 {
-  left: calc(50% - 600px);
-   outline: 5px solid green;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  height: 416px;
+  outline: 5px solid red;
 }
 
 .map-2 {
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  outline: 5px solid red;
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 600px);
+  outline: 5px solid green;
 }
 
 footer .wrap-general {
@@ -1262,7 +1260,7 @@ footer .wrap-general {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  top: 485px;
+  top: 564px;
   margin-bottom: 70px;
   left: 20px;
   right: 237px;
