@@ -269,10 +269,12 @@ header {
 
 .slider-controls {
   position: absolute;
-  top: 450px;
-  left: 908px;
   width: 160px;
   height: 18px;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+  z-index: 20;
 }
 
 .slider-controls li {
@@ -286,9 +288,25 @@ header {
   cursor: pointer;
 }
 
+.slider-controls li::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  top: 8px;
+  left: 8px;
+  border-radius: 50%;
+  z-index: 30;
+}
+
 .slider-controls li:last-child {
   margin: 0;
 }
+
+ 
+
+
 
 
 /* Catalog-page */
@@ -1218,7 +1236,7 @@ footer .wrap-general {
   background-color: #ffffff;
   padding-left: 50px;
   top: 134px;
-  left: calc(51% - 600px);
+  left: calc(51% - 580px);
   z-index: 30;
 }
 
