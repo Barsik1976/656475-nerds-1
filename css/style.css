@@ -1181,17 +1181,18 @@ div .price-sort {
   height: 416px;
 }
 
-.map-1 {
+.wrap-map > a {
   position: absolute;
   top: 80px;
-  left: calc(50% - 600px);
-  outline: 5px solid green;
 }
 
-.map-2 {
+.map-1 {
+  left: calc(50% - 600px);
+}
+
+.wrap-map iframe {
   position: absolute;
   top: 80px;
-  outline: 5px solid red;
 }
 
 footer .wrap-general {
@@ -1205,11 +1206,9 @@ footer .wrap-general {
   background-color: #ffffff;
   padding-left: 50px;
   top: 134px;
-  left: calc(50% - 600px);
+  left: calc(52% - 600px);
   z-index: 30;
 }
-
-
 
 .container h3 {
   font-family: "Roboto", sans-serif;
@@ -1261,7 +1260,7 @@ footer .wrap-general {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  top: 564px;
+  top: 150px;
   margin-bottom: 70px;
   left: 20px;
   right: 237px;
