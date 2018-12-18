@@ -1178,22 +1178,20 @@ div .price-sort {
 
 .wrap-map {
   position: relative;
+  height: 416px;
 }
 
 .map-1 {
   position: absolute;
   top: 80px;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  height: 416px;
-  outline: 5px solid red;
+  left: calc(50% - 600px);
+  outline: 5px solid green;
 }
 
 .map-2 {
   position: absolute;
   top: 80px;
-  left: calc(50% - 600px);
-  outline: 5px solid green;
+  outline: 5px solid red;
 }
 
 footer .wrap-general {
@@ -1208,6 +1206,7 @@ footer .wrap-general {
   padding-left: 50px;
   top: 134px;
   left: 20px;
+  z-index: 30;
 }
 
 .container h3 {
