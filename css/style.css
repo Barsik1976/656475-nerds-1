@@ -1205,9 +1205,11 @@ footer .wrap-general {
   background-color: #ffffff;
   padding-left: 50px;
   top: 134px;
-  left: 20px;
+  left: calc(50% - 600px);
   z-index: 30;
 }
+
+
 
 .container h3 {
   font-family: "Roboto", sans-serif;
