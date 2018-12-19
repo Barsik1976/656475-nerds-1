@@ -1525,6 +1525,20 @@ p {
   padding-right: 14px;
 }
 
+.fields-anketa input:hover,
+.fields-anketa input:focus {
+  border: 2px #b4b9bb solid;
+  outline: none;
+}
+
+.fields-anketa input:active {
+  border: 2px #000000 solid;
+}
+
+.fields-anketa input:invalid {
+  border: 2px #e74246 solid;
+}
+
 .modal p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1546,16 +1560,43 @@ p {
   padding-bottom: 12px;
 }
 
-.modal input:placeholder,
-.modal textarea:placeholder {
-  color: #444444;
-  opacity: 0.5;
+.modal textarea:hover,
+.modal textarea:focus {
+  border: 2px #b4b9bb solid;
   outline: none;
 }
 
-.modal input:placeholder:hover,
-.modal textarea:placeholder:hover {
-  opacity: 1.0;
+.modal textarea:active {
+  border: 2px #000000 solid;
+}
+
+.modal textarea:invalid {
+  border: 2px #e74246 solid;
+}
+
+.modal input:placeholder,
+.modal textarea:placeholder {
+  color: #a1a1a1;
+  outline: none;
+}
+
+.modal:hover input:placeholder,
+.modal:hover textarea:placeholder,
+.modal:focus input:placeholder,
+.modal:focus textarea:placeholder {
+  border: 2px #b4b9bb solid; 
+}
+
+.modal:active input:placeholder,
+.modal:active textarea:placeholder {
+  color: #444444;
+  border: 2px #000000 solid;
+}
+
+.modal:invalid input:placeholder,
+.modal:invalid textarea:placeholder {
+  color: #e74246;
+  border: 2px #e74246 solid;
 }
 
 .btn-send {
