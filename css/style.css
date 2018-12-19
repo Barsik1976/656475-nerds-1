@@ -1287,7 +1287,7 @@ footer .wrap-general {
   padding-left: 50px;
   top: 134px;
   left: calc(51% - 580px);
-  z-index: 30;
+  z-index: 25;
 }
 
 .container h3 {
@@ -1420,8 +1420,8 @@ footer .wrap-general {
 /* Модальное окно Напишите нам */
 
 
-.write-us {
-  display: none;
+.modal {
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1434,37 +1434,57 @@ footer .wrap-general {
   box-shadow: 0 8px 50px 5px #595a5a;
   overflow: auto;
   margin: auto;
+  z-index: 30;
 }
 
-.btn-writeus:active .write-us:target {
+.btn-writeus:active .modal:target {
   display: block;
   position: fixed;
 }
 
 .modal-close {
   position: absolute;
-  background-image: url("../img/close-cross.svg");
-  background-repeat: no-repeat;
-  top: 76px;
-  right: 89px;
-  width: 21px;
-  height: 21px;
-  opacity: 0.5;
-  padding: 0;
-  background-color: transparent;
-  border: 0;
+  top: 78px;
+  right: 90px;
   cursor: pointer;
   outline: none;
   font-size: 0;
 }
 
-.write-us h3 {
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 3px;
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: #fb565a;
+}
+
+.modal-close:active {
+  background-color: #ffeeee;
+}
+
+.modal h3 {
   font-family: "Roboto", sans-serif;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   text-align: left;
   color: #000000;
+  margin: 0;
 }
 
 .fields-anketa {
@@ -1484,7 +1504,7 @@ p {
   margin: 0px;
 }
 
-.write-us label {
+.modal label {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1505,14 +1525,14 @@ p {
   padding-right: 14px;
 }
 
-.write-us p {
+.modal p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 9px;
 }
 
-.write-us textarea {
+.modal textarea {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1526,10 +1546,16 @@ p {
   padding-bottom: 12px;
 }
 
-.write-us input:placeholder,
-.write-us textarea:placeholder {
+.modal input:placeholder,
+.modal textarea:placeholder {
   color: #444444;
   opacity: 0.5;
+  outline: none;
+}
+
+.modal input:placeholder:hover,
+.modal textarea:placeholder:hover {
+  opacity: 1.0;
 }
 
 .btn-send {
