@@ -403,6 +403,7 @@ header {
   background-color: #fb565a;
   border-radius: 5px;
   margin-top: 35px;
+  cursor: pointer;
 }
 
 .btn-order1:hover,
@@ -870,6 +871,7 @@ fieldset.properties {
   border-radius: 5px;
   border: none;
   outline: 0;
+  cursor: pointer;
 }
 
 .btn-show:hover,
@@ -1292,7 +1294,7 @@ footer .wrap-general {
   align-items: center;
   top: 150px;
   margin-bottom: 70px;
-  left: 20px;
+  left: 40px;
   right: 237px;
 }
 
