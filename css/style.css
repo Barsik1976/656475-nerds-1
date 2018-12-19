@@ -315,7 +315,7 @@ header {
   font-size: 16px;
   line-height: 50px;
   width: 240px;
-  min-height: 50px;
+  height: 50px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
@@ -332,8 +332,11 @@ header {
 }
 
 .btn-more:active {
+  height: 47px;
+  line-height: 47px;
   color: #e37376;
   background-color: #d7373b;
+  border-top: 3px solid #c13135;
 }
 
 
@@ -425,7 +428,7 @@ header {
   font-size: 16px;
   line-height: 50px;
   width: 160px;
-  min-height: 50px;
+  height: 50px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
@@ -434,6 +437,11 @@ header {
   border-radius: 5px;
   margin-top: 35px;
   cursor: pointer;
+}
+
+.btn-order1:active {
+  height: 47px;
+  line-height: 47px;
 }
 
 .btn-order1:hover,
@@ -446,6 +454,7 @@ header {
 .btn-order1:active {
   color: #e37376;
   background-color: #e74246;
+  border-top: 3px solid #c13135;
 }
 
 .btn-order2 {
@@ -463,6 +472,7 @@ header {
 .btn-order2:active {
   color: #4dc491;
   background-color: #00bc6c;
+  border-top: 3px solid #009958;
 }
 
 .btn-order3 {
@@ -480,6 +490,7 @@ header {
 .btn-order3:active {
   color: #edc265;
   background-color: #e5a722;
+  border-top: 3px solid #ce961f;
 }
 
 .visually-hidden {
@@ -1145,7 +1156,10 @@ div .price-sort {
 }
 
 .price-sort:active {
+  height: 47px;
+  line-height: 47px;
   background-color: #d7373b;
+  border-top: 3px solid #c13135;
 }
 
 .pagination-list {
