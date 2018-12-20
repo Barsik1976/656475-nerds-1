@@ -1531,16 +1531,17 @@ p {
   margin: 0px;
   padding-left: 14px;
   padding-right: 14px;
-}
-
-.fields-anketa input:hover,
-.fields-anketa input:focus {
-  border: 2px #b4b9bb solid;
   outline: none;
 }
 
-.fields-anketa input:active {
+.fields-anketa input[type="text"]:focus {
+  color: #444444;
   border: 2px #000000 solid;
+}
+
+.fields-anketa input[type="text"]:hover {
+  color: #a1a1a1;
+  border: 2px #b4b9bb solid;
 }
 
 .fields-anketa input:invalid {
@@ -1568,34 +1569,34 @@ p {
   padding-bottom: 12px;
 }
 
-.modal textarea:hover,
 .modal textarea:focus {
-  border: 2px #b4b9bb solid;
-  outline: none;
+  color: #444444;
+  border: 2px #000000 solid;
 }
 
-.modal textarea:active {
-  border: 2px #000000 solid;
+.modal textarea:hover {
+  color: #a1a1a1;
+  border: 2px #b4b9bb solid;
 }
 
 .modal textarea:invalid {
   border: 2px #e74246 solid;
 }
 
-.modal input:placeholder,
+.modal input[type="text"],
 .modal textarea:placeholder {
   color: #a1a1a1;
   outline: none;
 }
 
-.modal:hover input:placeholder,
+.modal:hover input[type="text"],
 .modal:hover textarea:placeholder,
-.modal:focus input:placeholder,
+.modal:focus input[type="text"],
 .modal:focus textarea:placeholder {
   border: 2px #b4b9bb solid; 
 }
 
-.modal:active input:placeholder,
+.modal:active input[type="text"],
 .modal:active textarea:placeholder {
   color: #444444;
   border: 2px #000000 solid;
@@ -1610,6 +1611,10 @@ p {
 .btn-send {
   width: 260px;
   margin-top: 38px;
+}
+
+.overlay {
+
 }
 
 
