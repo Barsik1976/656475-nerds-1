@@ -1417,7 +1417,7 @@ footer .wrap-general {
 
 
 
-/* Модальное окно Напишите нам */
+/* Модальное окно Catalog-странице */
 
 
 .modal {
@@ -1520,10 +1520,11 @@ p {
   margin-bottom: 9px;
 }
 
-.fields-anketa input {
+.fields-anketa input[type="text"] {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
+  color: #a1a1a1;
   width: 328px;
   min-height: 46px;
   border: 2px #d7dcde solid;
@@ -1567,6 +1568,7 @@ p {
   padding-top: 12px;
   padding-right: 14px;
   padding-bottom: 12px;
+  outline: none;
 }
 
 .modal textarea:focus {
@@ -1602,7 +1604,7 @@ p {
   border: 2px #000000 solid;
 }
 
-.modal:invalid input:placeholder,
+.modal:invalid input[type="text"],
 .modal:invalid textarea:placeholder {
   color: #e74246;
   border: 2px #e74246 solid;
