@@ -177,6 +177,90 @@ header {
 /* Блок Слайдеры */
 
 
+.wrap-sliders {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Мой вариант Слайдеров-переключателей 
 
 .slider-controls {
   display: flex;
@@ -231,29 +315,19 @@ header {
   top: 4px;
   left: 4px;
   border-radius: 50%;
-  z-index: 30;
+  z-index: 15;
 }
-
-#point-1:checked ~ .slider-controls label:nth-of-type(1),
-#point-2:checked ~ .slider-controls label:nth-of-type(2),
-#point-3:checked ~ .slider-controls label:nth-of-type(3) {
-  border: 2px solid red;
-  z-index: 30;
-}
+*/
 
 
 
-
-
-
-.sliders {
+.slider-list {
   position: relative;
   text-align: left;
-  margin-left: 20px;
   list-style: none;
 }
 
-.sliders h2 {
+.slider-list h2 {
   display: block;
   position: relative;
   z-index: 10;
@@ -265,7 +339,7 @@ header {
   margin: 0;
 }
 
-.sliders p {
+.slider-list p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1421,7 +1495,7 @@ footer .wrap-general {
 
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
