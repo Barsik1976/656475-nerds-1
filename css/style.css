@@ -1449,6 +1449,8 @@ footer .wrap-general {
   cursor: pointer;
   outline: none;
   font-size: 0;
+  border: 0;
+  background-color: transparent;
 }
 
 .modal-close::before,
@@ -1468,12 +1470,18 @@ footer .wrap-general {
   transform: rotate(-45deg);
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover::before,
+.modal-close:focus::before {
   background-color: #fb565a;
 }
 
-.modal-close:active {
+.modal-close:hover::after,
+.modal-close:focus::after {
+  background-color: #fb565a;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
   background-color: #ffeeee;
 }
 
