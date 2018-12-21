@@ -1387,22 +1387,8 @@ footer .wrap-general {
   margin-right: 10px;
 }
 
-
-
-
-.footer-vkontakte {
-  background-image: url("../img/vk-icon.svg");
-  background-repeat: no-repeat;
-}
-
-.footer-facebook {
-  background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-}
-
-.footer-instagram {
-  background-image: url("../img/insta-icon.svg");
-  background-repeat: no-repeat;
+.social-button svg:active {
+  fill-opacity: 0.3;
 }
 
 .be-friends {
