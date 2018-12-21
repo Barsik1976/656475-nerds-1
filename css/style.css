@@ -252,10 +252,6 @@ header {
   border-radius: 50%;
 }
 
-.wrap-sliders input[type="radio"] {
-  display: ;
-}
-
 
 
 /* Блок Текст + Слайд */
@@ -860,11 +856,6 @@ fieldset.properties {
 
 .filters-item input + label {
   cursor: pointer;
-}
-
-.filters-item input[type="radio"],
-.filters-item input[type="checkbox"] {
-  display: ;
 }
 
 .filter-option input + label::before {
