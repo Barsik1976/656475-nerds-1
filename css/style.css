@@ -252,6 +252,10 @@ header {
   border-radius: 50%;
 }
 
+.sliders input[type="radio"] {
+
+}
+
 
 
 /* Блок Текст + Слайд */
@@ -1339,6 +1343,9 @@ footer .wrap-general {
   outline: none;
 }
 
+
+/* Блок Кнопки социальных сетей в Footer */
+
 .social-network {
   position: absolute;
   display: flex;
@@ -1359,25 +1366,29 @@ footer .wrap-general {
   list-style: none;
 }
 
-.logo-network a {
-  display: block;
-  width: 80px;
-  height: 80px;
-  border-radius: 50px;
-  background-color: #e1e1e1;
-  margin-right: 10px;
-  background-position: center;
-}
-
-.logo-network a:hover,
-.logo-network a:focus {
+.social-button:hover,
+.social-button:focus {
   background-color: #e74246;
   outline: none;
 }
 
-.logo-network a:active {
+.social-button:active {
   background-color: #d7373b;
 }
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+
+
 
 .footer-vkontakte {
   background-image: url("../img/vk-icon.svg");
