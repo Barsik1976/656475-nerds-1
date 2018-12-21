@@ -252,8 +252,8 @@ header {
   border-radius: 50%;
 }
 
-.sliders input[type="radio"] {
-
+.wrap-sliders input[type="radio"] {
+  display: ;
 }
 
 
@@ -716,8 +716,6 @@ td span {
 
 
 
-
-
 /* Блок-ползунок Стоимость */
 
 .range-filter {
@@ -864,6 +862,11 @@ fieldset.properties {
   cursor: pointer;
 }
 
+.filters-item input[type="radio"],
+.filters-item input[type="checkbox"] {
+  display: ;
+}
+
 .filter-option input + label::before {
   content: "";
   display: block;
@@ -873,6 +876,11 @@ fieldset.properties {
   opacity: 0.5;
 }
 
+.filters-item input[type="radio"] + label,
+.filters-item input[type="checkbox"] + label {
+  opacity: 0.7;
+}
+
 .filters-item input[type="radio"]:focus + label::before,
 .filters-item input[type="radio"]:hover + label::before,
 .filters-item input[type="checkbox"]:focus + label::before,
@@ -880,9 +888,21 @@ fieldset.properties {
   opacity: 1;
 }
 
+.filters-item input[type="radio"]:focus + label,
+.filters-item input[type="radio"]:hover + label,
+.filters-item input[type="checkbox"]:focus + label,
+.filters-item input[type="checkbox"]:hover + label {
+  opacity: 1;
+}
+
+.filters-item input[type="radio"]:disabled + label,
+.filters-item input[type="checkbox"]:disabled + label {
+  opacity: 0.3;
+}
+
 .filters-item input[type="radio"]:disabled + label::before,
 .filters-item input[type="checkbox"]:disabled + label::before {
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .filters-item input[type="radio"] + label::before {
