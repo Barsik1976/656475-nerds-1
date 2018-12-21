@@ -72,9 +72,6 @@ header {
 
 .wrap-index {
   position: relative;
-  min-height: 545px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .nav-header {
@@ -168,18 +165,22 @@ header {
   align-items: center;
 }
 
-.wrap-index section {
-  margin-left: 20px;
-}
 
 
 
 /* Блок Слайдеры */
 
 
+.sliders {
+  position: relative;
+  background-color: #eeeeee;
+}
+
 .wrap-sliders {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .slider-controls {
@@ -324,13 +325,10 @@ header {
 .slider-list {
   position: relative;
   text-align: left;
-  list-style: none;
 }
 
-.slider-list h2 {
+.slider-list h3 {
   display: block;
-  position: relative;
-  z-index: 10;
   font-family: "Roboto", sans-serif;
   font-size: 55px;
   line-height: 58px;
@@ -348,39 +346,39 @@ header {
   margin-top: 29px;
 }
 
-.slider-item {
-  display: none;
-  padding: 78px 0 80px 0;
+.slider-list div {
+  padding-top: 55px;
+  padding-bottom: 80px;
 }
 
-.slider-item:nth-child(1) {
+.slider-item1 {
   display: block;
 }
 
-.slider-item:nth-child(2) {
+.slider-item2 {
   display: none;
 }
 
-.slider-item:nth-child(3) {
+.slider-item3 {
   display: none;
 }
 
-.slider-item:nth-child(1) {
+.slider-item1 {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 90% 30px;
+  background-position: 87% 8px;
 }
 
-.slider-item:nth-child(2) {
+.slider-item2 {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 100% 25px;
+  background-position: 90% 0px;
 }
 
-.slider-item:nth-child(3) {
+.slider-item3 {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 100% 35px;
+  background-position: 90% 12px;
 }
 
 .btn-more {
