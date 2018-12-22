@@ -507,6 +507,7 @@ header {
   padding: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+  clip-path: inset(100%);
 }
 
 .wrap-aboutstudio {
