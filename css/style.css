@@ -118,15 +118,14 @@ header {
   margin-left: 202px;
 }
 
-.menu-nav,
-.cart {
+.menu-nav {
   list-style: none;
 }
 
 .menu-nav a:hover,
 .menu-nav a:focus,
-.cart a:hover,
-.cart a:focus {
+.cart:hover,
+.cart:focus {
   color: #fb565a;
   outline: none;
 }
@@ -143,6 +142,7 @@ header {
 }
 
 .cart {
+  display: block;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -153,7 +153,7 @@ header {
   margin-left: 286px;
 }
 
-.cart a:active {
+.cart:active {
   color: #a6a6a6;
 }
 
@@ -178,14 +178,12 @@ header {
 .sliders {
   position: relative;
   background-color: #eeeeee;
-}
-
-.wrap-sliders {
   width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 
 
 /* Блок кнопок Слайдеров */
@@ -194,7 +192,7 @@ header {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 7;
   width: 160px;
   height: 18px;
   text-align: center;
@@ -1295,6 +1293,7 @@ div .price-sort {
 .wrap-map iframe {
   position: absolute;
   top: 80px;
+  border: 0;
 }
 
 footer .wrap-general {
@@ -1395,11 +1394,11 @@ footer .wrap-general {
   width: 80px;
   height: 80px;
   background-color: #e1e1e1;
-  border-radius: 50px;
+  border-radius: 50%;
   margin-right: 10px;
 }
 
-.social-button svg:active {
+.social-button:active {
   fill-opacity: 0.3;
 }
 
@@ -1501,7 +1500,6 @@ footer .wrap-general {
 }
 
 .modal h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -1529,7 +1527,6 @@ p {
 
 .modal label {
   display: block;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 9px;
@@ -1564,13 +1561,6 @@ p {
   border: 2px #e74246 solid;
 }
 
-.modal p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 9px;
-}
-
 .modal textarea {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1601,37 +1591,30 @@ p {
 }
 
 .modal input[type="text"],
-.modal textarea:placeholder {
+.modal textarea::placeholder {
   color: #a1a1a1;
   outline: none;
 }
 
-.modal:hover input[type="text"],
-.modal:hover textarea:placeholder,
-.modal:focus input[type="text"],
-.modal:focus textarea:placeholder {
+#user-name:hover input[type="text"],
+#user-name:focus input[type="text"], 
+#user-mail:hover input[type="text"],
+#user-mail:focus input[type="text"] {
   border: 2px #b4b9bb solid; 
 }
 
-.modal:active input[type="text"],
-.modal:active textarea:placeholder {
+.modal:active input[type="text"] {
   color: #444444;
   border: 2px #000000 solid;
 }
 
 .modal:invalid input[type="text"],
-.modal:invalid textarea:placeholder {
+.modal:invalid textarea::placeholder {
   color: #e74246;
   border: 2px #e74246 solid;
 }
 
 .btn-send {
   width: 260px;
-  margin-top: 38px;
+  margin-top: 47px;
 }
-
-.overlay {
-
-}
-
-
