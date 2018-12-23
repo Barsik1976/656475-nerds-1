@@ -1526,6 +1526,7 @@ footer .wrap-general {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 36px;
 }
@@ -1546,86 +1547,65 @@ p {
   margin-bottom: 9px;
 }
 
-.fields-anketa input[type="text"] {
+.modal input[type="text"] {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #a1a1a1;
+  padding-left: 14px;
+  padding-right: 14px;
+  outline: none;
+}
+
+.fields-anketa input[type="text"] {
   width: 328px;
   min-height: 46px;
   border: 2px #d7dcde solid;
   border-radius: 5px;
   margin: 0px;
-  padding-left: 14px;
-  padding-right: 14px;
-  outline: none;
-}
-
-.fields-anketa input[type="text"]:focus {
-  color: #444444;
-  border: 2px #000000 solid;
 }
 
 .fields-anketa input[type="text"]:hover {
-  color: #a1a1a1;
   border: 2px #b4b9bb solid;
 }
 
-.fields-anketa input:invalid {
-  border: 2px #e74246 solid;
-}
-
-.modal textarea {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+.fields-letter input[type="text"] {
   width: 728px;
   min-height: 90px;
   border: 2px #d7dcde solid;
   border-radius: 5px;
-  padding-left: 14px;
   padding-top: 12px;
-  padding-right: 14px;
   padding-bottom: 12px;
-  outline: none;
 }
 
-.modal textarea:focus {
-  color: #444444;
+.fields-anketa input[type="text"]:focus,
+.fields-letter input[type="text"]:focus {
   border: 2px #000000 solid;
 }
 
-.modal textarea:hover {
-  color: #a1a1a1;
+.fields-anketa input[type="text"]:hover,
+.fields-letter input[type="text"]:hover {
   border: 2px #b4b9bb solid;
 }
 
-.modal textarea:invalid {
-  border: 2px #e74246 solid;
+.modal input[type="text"]:focus::placeholder {
+  color: #444444;
+  outline: none;
 }
 
-.modal input[type="text"],
-.modal textarea::placeholder {
+.modal input[type="text"]::placeholder,
+.modal input[type="text"]:hover::placeholder {
   color: #a1a1a1;
   outline: none;
 }
 
-#user-name:hover input[type="text"],
-#user-name:focus input[type="text"], 
-#user-mail:hover input[type="text"],
-#user-mail:focus input[type="text"] {
-  border: 2px #b4b9bb solid; 
-}
-
-.modal:active input[type="text"] {
-  color: #444444;
-  border: 2px #000000 solid;
-}
-
-.modal:invalid input[type="text"],
-.modal:invalid textarea::placeholder {
-  color: #e74246;
+.fields-anketa input[type="text"]:invalid,
+.fields-letter input[type="text"]:invalid {
   border: 2px #e74246 solid;
+}
+
+.modal input[type="text"]:invalid::placeholder {
+  color: #e74246;
 }
 
 .btn-send {
