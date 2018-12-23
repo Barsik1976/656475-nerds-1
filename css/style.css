@@ -1209,6 +1209,7 @@ div .price-sort {
   background-color: #eeeeee;
   border-radius: 5px;
   margin-right: 10px;
+  margin-bottom: 10px; 
 }
 
 .next a {
@@ -1217,7 +1218,7 @@ div .price-sort {
   height: 50px;
   background-color: #eeeeee;
   text-align: center;
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 .pagination-item a:hover,
@@ -1448,7 +1449,7 @@ footer .wrap-general {
 
 
 .modal {
-  display: none;
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
