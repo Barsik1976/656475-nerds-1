@@ -1190,6 +1190,7 @@ div .price-sort {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 50px;
@@ -1198,36 +1199,35 @@ div .price-sort {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  list-style: none;
 }
 
-.pagination-item {
+.pagination-item a {
   display: block;
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   background-color: #eeeeee;
   border-radius: 5px;
   margin-right: 10px;
 }
 
-.pagination-list button {
-
-}
-
-.pagination-list .next {
-  width: 260px;
+.next a {
+  display: block;
+  min-width: 260px;
   height: 50px;
+  background-color: #eeeeee;
   text-align: center;
   margin-right: 0;
 }
 
-.pagination-item:hover,
-.pagination-item:focus {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: #dfdfdf;
   outline: none;
 }
 
-.pagination-item:active {
-  width: 50px;
+.pagination-item a:active {
+  min-width: 50px;
   height: 47px;
   line-height: 47px;
   color: #959595;
@@ -1236,8 +1236,8 @@ div .price-sort {
   border-top: 3px #bfbfbf solid;
 }
 
-.pagination-list .next:active {
-  width: 260px;
+.next a:active {
+  min-width: 260px;
   height: 47px;
   line-height: 47px;
   text-align: center;
@@ -1246,8 +1246,9 @@ div .price-sort {
   border-top: 3px #bfbfbf solid;
 }
 
-.pagination-item-active {
-  width: 44px;
+.pagination-item-active a {
+  display: block;
+  min-width: 44px;
   height: 44px;
   line-height: 44px;
   color: #000000;
@@ -1255,10 +1256,11 @@ div .price-sort {
   border-radius: 5px;
   border: 3px #dbdbdb solid;
   margin-right: 10px;
+  list-style: none;
 }
 
-.pagination-list .next-active {
-  width: 254px;
+.next-active a {
+  min-width: 254px;
   height: 44px;
   line-height: 44px;
   text-align: center;
