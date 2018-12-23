@@ -329,10 +329,14 @@ header {
   margin-top: 46px; 
 }
 
-.btn-more:hover,
+.btn-more:hover {
+  background-color: #e74246;
+}
+
 .btn-more:focus {
   background-color: #e74246;
-  outline: none;
+  outline: 2px;
+  box-shadow: 0px 0px 5px #4D90FE;
 }
 
 .btn-more:active {
@@ -443,6 +447,11 @@ header {
   cursor: pointer;
 }
 
+.btn-order1:focus {
+  outline: 2px;
+  box-shadow: 0px 0px 5px #4D90FE;
+}
+
 .btn-order1:active {
   height: 47px;
   line-height: 47px;
@@ -452,7 +461,6 @@ header {
 .btn-order1:focus {
   color: #ffffff;
   background-color: #e74246;
-  outline: 2px blue;
 }
 
 .btn-order1:active {
@@ -470,7 +478,6 @@ header {
 .btn-order2:focus {
   color: #ffffff;
   background-color: #00bc6c;
-  outline: none;
 }
 
 .btn-order2:active {
@@ -488,7 +495,6 @@ header {
 .btn-order3:focus {
   color: #ffffff;
   background-color: #eab534;
-  outline: none;
 }
 
 .btn-order3:active {
@@ -640,6 +646,7 @@ td span {
   justify-content: center;
   align-items: center;
   height: 100%;
+  outline: none;
 }
 
 .wrap-sites li {
@@ -935,10 +942,14 @@ fieldset.properties {
   cursor: pointer;
 }
 
-.btn-show:hover,
+.btn-show:hover {
+  background-color: #dfdfdf;
+}
+
 .btn-show:focus {
   background-color: #dfdfdf;
-  outline: none;
+  outline: 2px;
+  box-shadow: 0px 0px 5px #4D90FE;
 }
 
 .btn-show:active {
@@ -1169,10 +1180,14 @@ div .price-sort {
   margin-left: 40px;
 }
 
-.price-sort:hover,
+.price-sort:hover {
+  background-color: #e74246;
+}
+
 .price-sort:focus {
   background-color: #e74246;
-  outline: none;
+  outline: 2px;
+  box-shadow: 0px 0px 5px #4D90FE;
 }
 
 .price-sort:active {
@@ -1221,10 +1236,14 @@ div .price-sort {
   margin-right: 10px;
 }
 
-.pagination-item a:hover,
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
 .pagination-item a:focus {
   background-color: #dfdfdf;
-  outline: none;
+  outline: 2px;
+  box-shadow: 0px 0px 5px #4D90FE;
 }
 
 .pagination-item a:active {
@@ -1298,6 +1317,7 @@ div .price-sort {
 
 .map-1 {
   left: calc(50% - 600px);
+  outline: none;
 }
 
 .wrap-map iframe {
@@ -1361,12 +1381,13 @@ footer .wrap-general {
   margin: 0;
 }
 
-
-.btn-writeus:hover .write-us,
-.btn-writeus:focus .write-us {
+.btn-writeus:focus {
   display: block;
-  outline: none;
+  outline: 2px;
+  box-shadow: 0px 0px 5px #4D90FE;
 }
+
+
 
 
 /* Блок Кнопки социальных сетей в Footer */
@@ -1449,7 +1470,7 @@ footer .wrap-general {
 
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1526,7 +1547,6 @@ footer .wrap-general {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 36px;
 }
@@ -1552,59 +1572,67 @@ p {
   font-size: 16px;
   font-weight: 500;
   color: #a1a1a1;
-  padding-left: 14px;
-  padding-right: 14px;
-  outline: none;
-}
-
-.fields-anketa input[type="text"] {
   width: 328px;
   min-height: 46px;
+  padding-left: 14px;
+  padding-right: 14px;
   border: 2px #d7dcde solid;
   border-radius: 5px;
   margin: 0px;
+  outline: none;
 }
 
 .fields-anketa input[type="text"]:hover {
   border: 2px #b4b9bb solid;
 }
 
-.fields-letter input[type="text"] {
+.modal textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #a1a1a1;
   width: 728px;
   min-height: 90px;
   border: 2px #d7dcde solid;
   border-radius: 5px;
   padding-top: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
   padding-bottom: 12px;
+  outline: none;
 }
 
 .fields-anketa input[type="text"]:focus,
-.fields-letter input[type="text"]:focus {
+.modal textarea:focus {
   border: 2px #000000 solid;
 }
 
 .fields-anketa input[type="text"]:hover,
-.fields-letter input[type="text"]:hover {
+.modal textarea:hover {
   border: 2px #b4b9bb solid;
 }
 
-.modal input[type="text"]:focus::placeholder {
+.modal input[type="text"]:focus::placeholder,
+.modal textarea:focus::placeholder {
   color: #444444;
   outline: none;
 }
 
 .modal input[type="text"]::placeholder,
-.modal input[type="text"]:hover::placeholder {
+.modal textarea::placeholder,
+.modal input[type="text"]:hover::placeholder,
+.modal textarea:hover::placeholder {
   color: #a1a1a1;
   outline: none;
 }
 
 .fields-anketa input[type="text"]:invalid,
-.fields-letter input[type="text"]:invalid {
+.modal textarea:invalid {
   border: 2px #e74246 solid;
 }
 
-.modal input[type="text"]:invalid::placeholder {
+.modal input[type="text"]:invalid::placeholder,
+.modal textarea:invalid::placeholder {
   color: #e74246;
 }
 
@@ -1612,3 +1640,9 @@ p {
   width: 260px;
   margin-top: 47px;
 }
+
+.btn-send:focus {
+  outline: 2px;
+  box-shadow: 0px 0px 5px  #4D90FE;
+}
+
