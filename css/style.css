@@ -36,6 +36,7 @@ body {
   text-align: left;
   list-style: none;
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
 }
 
 main {
@@ -269,6 +270,18 @@ header {
   margin: 0;
 }
 
+.slider-item1 h3 {
+  width: 400px;
+}
+
+.slider-item2 h3 {
+  width: 536px;
+}
+
+.slider-item3 h3 {
+  width: 430px;
+}
+
 .slider-list p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -392,6 +405,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 300px;
   margin-top: 80px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -422,9 +436,13 @@ header {
   height: 146px;
 }
 
+.product p {
+  width: 260px;
+}
+
 .header-order {
   font-size: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 27px;
@@ -432,8 +450,7 @@ header {
 
 .btn-order1 {
   display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: inherit;
   line-height: 50px;
   width: 160px;
   height: 50px;
@@ -521,7 +538,7 @@ header {
   align-items: flex-start;
   margin-left: 20px;
   margin-right: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: normal;
   color: #000000;
   text-align: left;
@@ -544,7 +561,6 @@ header {
 }
 
 .about-studio p {
-  font-size: 16px;
   line-height: 24px;
 }
 
@@ -555,8 +571,7 @@ header {
 }
 
 .wrap-aboutstudio h5 {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -597,26 +612,27 @@ header {
 }
 
 td {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-size: 45px;
   font-weight: 700;
 }
 
 th {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: normal;
   padding: 0;
   padding-top: 27px;
 }
 
-.table-percentn th {
-  font-size: 16px;
+.table-percentn {
+  position: relative;
 }
 
-td span {
+td sup {
   display: inline-block;
-  font-size: 80%;
+  font-size: 65%;
 }
+
 
 
 
