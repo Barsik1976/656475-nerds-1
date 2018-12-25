@@ -653,7 +653,7 @@ td span {
   list-style: none;
 }
 
-.wrap-sites a {
+.logo-partner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -685,14 +685,13 @@ td span {
   top: 17px;
 }
 
-.wrap-sites a:hover img,
-.wrap-sites a:focus img {
+.logo-partner:hover img,
+.logo-partner:focus img {
   opacity: 1;
   outline: none;
 }
 
-.wrap-sites a:active,
-.wrap-sites a:active li {
+.logo-partner:active {
   opacity: 0.08;
 }
 
@@ -979,7 +978,7 @@ fieldset.properties {
   margin-left: 140px;
 }
 
-.sort-category {
+.wrap-category {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -987,14 +986,23 @@ fieldset.properties {
   margin-right: 20px;
 }
 
+.sort-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 670px;
+  align-items: center;
+  margin-right: 0px;
+}
+
 .sort-category h3 {
+  position: relative;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   margin-right: 266px;
 }
 
@@ -1002,18 +1010,22 @@ fieldset.properties {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 540px;
   font-family: inherit;
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
-  text-align: center;
   list-style: none;
-  padding: 0;
+  margin-right: 0px;
+}
+
+.category-type li {
 }
 
 .category-type a {
   color: #b2b2b2;
-  margin-right: 28px;
 }
 
 .category-type a:hover,
@@ -1033,8 +1045,9 @@ fieldset.properties {
 .arrows {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 18px;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  margin-left: 21px;
 }
 
 .arrows a {
@@ -1431,6 +1444,8 @@ footer .wrap-general {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 280px;
   list-style: none;
 }
 
@@ -1453,6 +1468,7 @@ footer .wrap-general {
   background-color: #e1e1e1;
   border-radius: 50%;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .social-button:active {
@@ -1585,7 +1601,7 @@ p {
 
 .modal input[type="text"] {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: normal;
   color: #a1a1a1;
   width: 328px;
   min-height: 46px;
@@ -1597,13 +1613,34 @@ p {
   outline: none;
 }
 
+input:required,
+textarea:required {
+  color: #444444;
+  border: 2px #b4b9bb solid;
+}
+
+.contact-form input[type="text"]:focus:invalid,
+.contact-form textarea:focus:invalid {
+  border: 2px #e74246 solid;
+}
+
+.contact-form input:focus:invalid::placeholder,
+.contact-form textarea:focus:invalid::placeholder {
+  color: #e74246;
+}
+
+.modal input[type="text"]::placeholder,
+.modal textarea::placeholder {
+  font-weight: normal;
+}
+
 .fields-anketa input[type="text"]:hover {
   border: 2px #b4b9bb solid;
 }
 
 .modal textarea {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: normal;
   color: #a1a1a1;
   width: 728px;
   min-height: 90px;
@@ -1642,12 +1679,10 @@ p {
 
 .fields-anketa input[type="text"]:invalid,
 .modal textarea:invalid {
-  border: 2px #e74246 solid;
 }
 
 .modal input[type="text"]:invalid::placeholder,
 .modal textarea:invalid::placeholder {
-  color: #e74246;
 }
 
 .btn-send {

@@ -102,16 +102,16 @@
         </div>
         <div class="wrap-line">
           <ul class="wrap-sites">
-            <li><a href="https://htmlacademy.ru/intensive/htmlcss">
+            <li><a class="logo-partner" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/project1.png" alt="Сайт академии" width="199" height="68">
             </a></li>
-            <li><a href ="#barbershop">
+            <li><a class="logo-partner" href ="#barbershop">
               <img src="img/project2.png" alt="Сайт барбершоп" width="206" height="86">
             </a></li>
-            <li><a href="#pink">
+            <li><a class="logo-partner" href="#pink">
               <img src="img/project3.png" alt="Сайт пинк" width="184" height="50">
             </a></li>
-            <li><a href="#mishka">
+            <li><a class="logo-partner" href="#mishka">
               <img src="img/project4.png" alt="Сайт мишка" width="170" height="83">
             </a></li>
           </ul>
@@ -159,20 +159,20 @@
       </footer>
         <section class="modal">
           <h3>Напишите нам</h3>
-             <form action="https://echo.htmlacademy.ru" method="post">
+             <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="fields-anketa">
                 <p>
                   <label for="user-name">Ваше имя:</label>
-                  <input id="user-name" name="name" type="text" placeholder="Имя Фамилия">
+                  <input id="user-name" name="name" type="text" placeholder="Имя Фамилия" required />
                 </p>
                 <p class="text-anketa">
                   <label for="user-mail">Ваш e-mail:</label>
-                  <input id="user-mail" name="mail" type="text" placeholder="email@example.com">
+                  <input id="user-mail" name="mail" type="text" placeholder="email@example.com" required/>
                 </p>
               </div>
                 <p>
                   <label for="user-letter">Текст письма:</label>
-                  <textarea id="user-letter" name="text" placeholder="В свободной форме"></textarea>
+                  <textarea id="user-letter" name="text" placeholder="В свободной форме" required></textarea>
                 </p>
                 <input class="btn-writeus btn-send" type="submit" value="Отправить">
               </form>
