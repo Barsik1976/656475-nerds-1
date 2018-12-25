@@ -1566,7 +1566,7 @@ footer .wrap-general {
   background-color: #ffeeee;
 }
 
-.modal h3 {
+.contact-form h3 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -1592,14 +1592,14 @@ p {
   margin: 0px;
 }
 
-.modal label {
+.contact-form label {
   display: block;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 9px;
 }
 
-.modal input[type="text"] {
+.contact-form input[type="text"] {
   font-family: inherit;
   font-weight: normal;
   color: #a1a1a1;
@@ -1613,32 +1613,23 @@ p {
   outline: none;
 }
 
-input:required,
-textarea:required {
-  color: #444444;
-  border: 2px #b4b9bb solid;
+.contact-form input[type="text"]:invalid,
+.contact-form textarea:invalid {
+  border: 2px solid;
 }
 
-.contact-form input[type="text"]:focus:invalid,
-.contact-form textarea:focus:invalid {
-  border: 2px #e74246 solid;
+.contact-form input[type="text"]:invalid::placeholder,
+.contact-form textarea:invalid::placeholder {
+ #e74246;
 }
 
-.contact-form input:focus:invalid::placeholder,
-.contact-form textarea:focus:invalid::placeholder {
-  color: #e74246;
-}
-
-.modal input[type="text"]::placeholder,
-.modal textarea::placeholder {
+.contact-form input[type="text"]:hover {
   font-weight: normal;
-}
-
-.fields-anketa input[type="text"]:hover {
+  color: #a1a1a1;
   border: 2px #b4b9bb solid;
 }
 
-.modal textarea {
+.contact-form textarea {
   font-family: inherit;
   font-weight: normal;
   color: #a1a1a1;
@@ -1653,36 +1644,23 @@ textarea:required {
   outline: none;
 }
 
-.fields-anketa input[type="text"]:focus,
-.modal textarea:focus {
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+  color: #444444;
   border: 2px #000000 solid;
 }
 
-.fields-anketa input[type="text"]:hover,
-.modal textarea:hover {
-  border: 2px #b4b9bb solid;
-}
-
-.modal input[type="text"]:focus::placeholder,
-.modal textarea:focus::placeholder {
-  color: #444444;
-  outline: none;
-}
-
-.modal input[type="text"]::placeholder,
-.modal textarea::placeholder,
-.modal input[type="text"]:hover::placeholder,
-.modal textarea:hover::placeholder {
+.contact-form input[type="text"]:hover,
+.contact-form textarea:hover {
   color: #a1a1a1;
+  border: 2px #b4b9bb solid;
   outline: none;
 }
 
-.fields-anketa input[type="text"]:invalid,
-.modal textarea:invalid {
-}
-
-.modal input[type="text"]:invalid::placeholder,
-.modal textarea:invalid::placeholder {
+.contact-form input[type="text"]:required:invalid,
+.contact-form textarea:invalid {
+  color: #e74246;
+  border: 2px #e74246 solid;
 }
 
 .btn-send {
