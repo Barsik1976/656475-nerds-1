@@ -368,9 +368,11 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
   margin-left: 20px;
   margin-right: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .product {
@@ -378,12 +380,12 @@ header {
   flex-direction: column;
   align-items: flex-start;
   width: 300px;
-  margin-top: 80px;
   font-family: inherit;
   line-height: 23px;
   font-weight: normal;
   color: #000000;
   text-align: left;
+  margin-bottom: 60px; 
 }
 
 .product .product-1 {
