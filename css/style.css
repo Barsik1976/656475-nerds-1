@@ -1219,32 +1219,34 @@ div .price-sort {
   list-style: none;
 }
 
-.pagination-item a {
+.pagination-item {
+  margin-bottom: 10px; 
+}
+
+.pagination-item {
   display: block;
   min-width: 50px;
   height: 50px;
   background-color: #eeeeee;
   border-radius: 5px;
   margin-right: 10px;
-  margin-bottom: 10px; 
 }
 
-.next a {
+.pagination-item:last-child {
   display: block;
   min-width: 260px;
   height: 50px;
   background-color: #eeeeee;
   text-align: center;
-  margin-right: 10px;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item:hover,
+.pagination-item:focus {
   background-color: #dfdfdf;
   outline: none;
 }
 
-.pagination-item a:active {
+.pagination-item:active {
   min-width: 50px;
   height: 47px;
   line-height: 47px;
@@ -1254,7 +1256,7 @@ div .price-sort {
   border-top: 3px #bfbfbf solid;
 }
 
-.next a:active {
+.pagination-item:last-child:active {
   min-width: 260px;
   height: 47px;
   line-height: 47px;
@@ -1264,7 +1266,7 @@ div .price-sort {
   border-top: 3px #bfbfbf solid;
 }
 
-.pagination-item-active a {
+.pagination-item-active {
   display: block;
   min-width: 44px;
   height: 44px;
@@ -1277,7 +1279,7 @@ div .price-sort {
   list-style: none;
 }
 
-.next-active a {
+.pagination-item-active:last-child {
   min-width: 254px;
   height: 44px;
   line-height: 44px;
@@ -1428,6 +1430,10 @@ footer .wrap-general {
   list-style: none;
 }
 
+.logo-network li {
+  margin-bottom: 10px;
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: #e74246;
@@ -1447,7 +1453,6 @@ footer .wrap-general {
   background-color: #e1e1e1;
   border-radius: 50%;
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .social-button:active {
