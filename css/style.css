@@ -379,6 +379,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap: wrap;
   width: 300px;
   font-family: inherit;
   line-height: 23px;
@@ -416,6 +417,7 @@ header {
 .header-order {
   font-size: 24px;
   font-family: inherit;
+  line-height: 32px;
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 27px;
