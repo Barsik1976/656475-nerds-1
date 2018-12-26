@@ -68,7 +68,7 @@ header {
 
 .menu-nav,
 .cart {
-  padding-top: 33px;
+  padding-top: 53px;
 }
 
 .main-header-logo:hover,
@@ -85,16 +85,15 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 640px;
   font-family: inherit;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   text-align: left;
-  width: 438px;
-  margin-left: 202px;
-}
-
-.menu-nav {
+  margin-left: 200px;
+  margin-right: 45px; 
   list-style: none;
 }
 
@@ -115,17 +114,19 @@ header {
   color: #000000;
   border-bottom: 2px #fb565a solid;
   padding-bottom: 10px;
+  margin-bottom: 20px; 
 }
 
 .cart {
   display: block;
+  max-width: 115px;
   position: relative;
   font-family: inherit;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   padding-bottom: 12px;
-  margin-left: 286px;
+  margin-bottom: 20px; 
 }
 
 .cart:active {
@@ -240,6 +241,7 @@ header {
   font-size: 55px;
   line-height: 58px;
   font-weight: 500;
+  word-wrap: wrap;
   color: #000000;
   margin: 0;
 }
@@ -257,9 +259,11 @@ header {
 }
 
 .slider-list p {
+  width: 400px;
   font-family: inherit;
   line-height: 24px;
   font-weight: 500;
+  word-wrap: wrap;
   color: #000000;
   margin-top: 29px;
 }
