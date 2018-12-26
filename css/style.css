@@ -695,7 +695,7 @@ td span {
 
 .left-column {
   margin-left: 20px;
-  margin-top: 60px;
+  margin-top: 63px;
 }
 
 .left-column fieldset, ul {
@@ -950,8 +950,8 @@ fieldset.properties {
 /* Правая колонка */
 
 .right-column {
-  margin-top: 60px;
   margin-left: 140px;
+  margin-top: 60px;
 }
 
 .wrap-category {
@@ -960,6 +960,7 @@ fieldset.properties {
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .sort-category {
@@ -980,13 +981,13 @@ fieldset.properties {
   text-align: left;
   margin: 0;
   margin-right: 266px;
+  margin-bottom: 10px; 
 }
 
 .category-type {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   width: 540px;
   font-family: inherit;
@@ -998,6 +999,7 @@ fieldset.properties {
 }
 
 .category-type li {
+  padding-bottom: 10px;
 }
 
 .category-type a {
@@ -1022,8 +1024,10 @@ fieldset.properties {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  max-width: 41px;
   flex-wrap: nowrap;
   margin-left: 21px;
+  margin-bottom: 10px; 
 }
 
 .arrows a {
@@ -1062,7 +1066,6 @@ fieldset.properties {
 .banners-list {
   display: flex;
   justify-content: flex-start;
-  margin-top: 60px;
   margin-right: 20px;
 }
 
@@ -1483,7 +1486,7 @@ footer .wrap-general {
 
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
