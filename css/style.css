@@ -25,6 +25,7 @@ input {
 
 img {
   max-width: 100%;
+  height: auto;
   margin: 0;
 }
 
@@ -63,7 +64,6 @@ header {
   align-items: flex-start;
   padding-top: 50px;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
 .menu-nav,
