@@ -95,6 +95,7 @@ header {
   margin-left: 200px;
   margin-right: 86px; 
   list-style: none;
+  outline: 2px solid red;
 }
 
 .menu-nav li {
@@ -372,28 +373,29 @@ header {
 /* Index-page */
 
 .wrap-order {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  width: 1100px;
   margin-top: 80px;
   margin-left: 20px;
   margin-right: 80px;
   margin-bottom: 20px;
 }
 
-.product {
+.container-product {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   flex-wrap: wrap;
+  margin-left: -100px;
+}
+
+.product {
+  position: relative;
   width: 300px;
   font-family: inherit;
   line-height: 23px;
   font-weight: normal;
   color: #000000;
   text-align: left;
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
+  margin-left: 100px;
 }
 
 .product .product-1 {
@@ -1006,7 +1008,6 @@ fieldset.properties {
   font-weight: normal;
   text-transform: uppercase;
   list-style: none;
-  margin-right: 0px;
 }
 
 .category-type li {
@@ -1440,13 +1441,15 @@ footer .wrap-general {
   right: 237px;
 }
 
+.container-social {
+  width: 260px;
+}
+
 .logo-network {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 280px;
   list-style: none;
+  margin-left: -10px;
 }
 
 .logo-network li {
@@ -1471,7 +1474,7 @@ footer .wrap-general {
   height: 80px;
   background-color: #e1e1e1;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .social-button:active {
