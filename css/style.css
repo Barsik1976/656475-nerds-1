@@ -60,10 +60,11 @@ header {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   padding-top: 50px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu-nav,
@@ -81,26 +82,25 @@ header {
   opacity: 0.2;
 }
 
+.container-menu {
+  width: 640px;
+}
+
 .menu-nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 640px;
   font-family: inherit;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   text-align: left;
-  margin-left: 200px;
-  margin-right: 86px; 
   list-style: none;
-  outline: 2px solid red;
 }
 
 .menu-nav li {
-  margin-right: 46px;
+  min-height: 30px;
   margin-bottom: 20px; 
+  margin-left: 48px;
 }
 
 .menu-nav a:hover,
@@ -119,18 +119,17 @@ header {
   display: block;
   color: #000000;
   border-bottom: 2px #fb565a solid;
-  padding-bottom: 10px;
   margin-bottom: 20px; 
 }
 
 .cart {
   display: block;
   max-width: 115px;
+  min-height: 30px;
   font-family: inherit;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
-  padding-bottom: 12px;
   margin-bottom: 20px; 
 }
 
