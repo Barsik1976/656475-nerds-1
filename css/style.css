@@ -1,5 +1,14 @@
 
 
+@font-face {
+font-family: "Roboto";
+src: url("../fonts/roboto.woff2") format("woff2");
+src: url("../fonts/roboto.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -972,14 +981,14 @@ fieldset.properties {
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
 }
 
 .sort-category {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 670px;
+  width: 700px;
   align-items: center;
   margin-right: 0px;
 }
@@ -993,24 +1002,27 @@ fieldset.properties {
   text-align: left;
   margin: 0;
   margin-right: 266px;
-  margin-bottom: 10px; 
+  margin-bottom: 15px; 
+}
+
+.container-category {
+  width: 300px;
 }
 
 .category-type {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 540px;
   font-family: inherit;
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
   list-style: none;
+  margin-left: -25px;
 }
 
 .category-type li {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  margin-left: 25px;
 }
 
 .category-type a {
@@ -1038,7 +1050,7 @@ fieldset.properties {
   max-width: 41px;
   flex-wrap: nowrap;
   margin-left: 21px;
-  margin-bottom: 10px; 
+  margin-bottom: 15px; 
 }
 
 .arrows a {
