@@ -1231,10 +1231,12 @@ div .price-sort {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 50px;
   margin-top: 28px;
+  margin-right: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -1243,26 +1245,22 @@ div .price-sort {
 
 .pagination-item a {
   display: block;
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   background-color: #eeeeee;
   border-radius: 5px;
   margin-right: 10px;
-  margin-bottom: 10px;
-  outline: 2px solid red; 
+  margin-bottom: 10px; 
 }
 
-.pagination-item {
-  outline: 2px solid green; 
-}
-
-.pagination-item:last-child {
+.pagination-item:last-child a,
+.pagination-item:first-child a {
   display: block;
-  width: 260px;
-  border-radius: 5px;  
+  min-width: 260px;
+  height: 50px;
   background-color: #eeeeee;
   text-align: center;
-  outline: 2px solid yellow; 
+  margin-right: 10px;
 }
 
 .pagination-item a:hover,
@@ -1272,7 +1270,7 @@ div .price-sort {
 }
 
 .pagination-item a:active {
-  width: 50px;
+  min-width: 50px;
   height: 47px;
   line-height: 47px;
   color: #959595;
@@ -1281,14 +1279,9 @@ div .price-sort {
   border-top: 3px #bfbfbf solid;
 }
 
-.pagination-item a:last-child:hover,
-.pagination-item a:last-child:focus {
-  background-color: #dfdfdf;
-  outline: none;
-}
-
-.pagination-item a:active {
-  width: 260px;
+.pagination-item:last-child a:active,
+.pagination-item:first-child a:active {
+  min-width: 260px;
   height: 47px;
   line-height: 47px;
   text-align: center;
@@ -1297,9 +1290,9 @@ div .price-sort {
   border-top: 3px #bfbfbf solid;
 }
 
-.pagination-item-active {
+.pagination-item-active a {
   display: block;
-  width: 44px;
+  min-width: 44px;
   height: 44px;
   line-height: 44px;
   color: #000000;
@@ -1310,8 +1303,8 @@ div .price-sort {
   list-style: none;
 }
 
-.pagination-item-active:last-child {
-  width: 254px;
+.next-active a {
+  min-width: 254px;
   height: 44px;
   line-height: 44px;
   text-align: center;
@@ -1323,7 +1316,7 @@ div .price-sort {
 
 .wrap-sites li:first-child::before {
   content: none;
-} 
+}
 
  
 
