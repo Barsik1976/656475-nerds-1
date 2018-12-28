@@ -632,15 +632,20 @@ td span {
   border-bottom: 2px #eeeeee solid;
 }
 
+.container-partners {
+  width: 1160px;
+  min-height: 180px;
+}
+
 .wrap-sites {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 30px;
+  flex-wrap: wrap;
   margin-right: 43px;
   margin-top: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 18px;
   list-style: none;
+  margin-left: -70px;
 }
 
 .logo-partner {
@@ -654,6 +659,8 @@ td span {
 .wrap-sites li {
   position: relative;
   min-height: 90px;
+  margin-left: 100px;
+  margin-bottom: 30px;
 }
 
 .wrap-sites img {
