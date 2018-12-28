@@ -633,19 +633,17 @@ td span {
 }
 
 .container-partners {
-  width: 1160px;
-  min-height: 180px;
+  width: 1085px;
+  padding-left: 30px;
 }
 
 .wrap-sites {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin-right: 43px;
   margin-top: 48px;
   margin-bottom: 18px;
   list-style: none;
-  margin-left: -70px;
+  margin-left: -105px;
 }
 
 .logo-partner {
@@ -659,17 +657,17 @@ td span {
 .wrap-sites li {
   position: relative;
   min-height: 90px;
-  margin-left: 100px;
   margin-bottom: 30px;
+  margin-left: 105px;
 }
 
 .wrap-sites img {
   opacity: 0.2;
 }
 
-.wrap-sites li:first-child::before {
+.wrap-sites li:nth-child(4n+1)::before {
   content: none;
-} 
+}
 
 .wrap-sites li::before {
   display: block;
