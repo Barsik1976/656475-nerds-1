@@ -154,7 +154,7 @@ header {
   height: 15px;
   left: 1045px;
   opacity: 0.3;
-  align-items: center;
+  vertical-align: middle;
 }
 
 
@@ -196,6 +196,7 @@ header {
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .slider-controls label::after {
@@ -578,6 +579,7 @@ header {
   content: "—";
   color: #fb565a;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .accuracy {
@@ -623,7 +625,7 @@ th {
 td span {
   display: inline-block;
   font-size: 65%;
-  transform: translateY(-15px);
+  vertical-align: top;
 }
 
 
@@ -795,6 +797,7 @@ td span {
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
+  vertical-align: middle;
 }
 
 .price-controls input {
@@ -913,6 +916,7 @@ fieldset.properties {
   background-image: url("../img/radio-off.svg");
   width: 25px;
   height: 25px;
+  vertical-align: middle;
 }
 
 .filters-item input[type="radio"]:checked + label::before {
@@ -924,6 +928,7 @@ fieldset.properties {
   background-image: url("../img/checkbox-off.svg");
   width: 23px;
   height: 23px;
+  vertical-align: middle;
 }
 
 .filters-item input[type="checkbox"]:checked + label::before {
@@ -1231,7 +1236,7 @@ div .price-sort {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 500;
   line-height: 50px;
   margin-top: 28px;
@@ -1301,17 +1306,6 @@ div .price-sort {
   border: 3px #dbdbdb solid;
   margin-right: 10px;
   list-style: none;
-}
-
-.next-active a {
-  min-width: 254px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-  border-radius: 5px;
-  border: 3px #dbdbdb solid;
 }
 
 .wrap-sites li:first-child::before {
