@@ -564,7 +564,7 @@ header {
 
 .about-studio {
   width: 700px;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   margin-top: 75px;
 }
 
@@ -597,8 +597,10 @@ header {
 
 .list-studio::before {
   display: inline-block;
-  content: "\2014";
-  color: #fb565a;
+  content: "";
+  background-color: #fb565a;
+  width: 25px;
+  height: 2px;
   margin-right: 10px;
   vertical-align: middle;
 }
