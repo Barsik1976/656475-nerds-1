@@ -597,7 +597,7 @@ header {
 
 .list-studio::before {
   display: inline-block;
-  content: "—";
+  content: "\2014";
   color: #fb565a;
   margin-right: 10px;
   vertical-align: middle;
@@ -1652,7 +1652,7 @@ footer .wrap-general {
 
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
