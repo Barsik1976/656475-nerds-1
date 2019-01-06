@@ -308,20 +308,20 @@ header {
 .slider-item1 {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 86% 100%;
+  background-position: 86% -12px;
   background-clip: 
 }
 
 .slider-item2 {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 90% 0px;
+  background-position: 92% -29px;
 }
 
 .slider-item3 {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 90% 12px;
+  background-position: 91% -13px;
 }
 
 .btn-more {
