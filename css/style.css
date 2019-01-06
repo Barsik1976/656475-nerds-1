@@ -1673,6 +1673,10 @@ footer .wrap-general {
   z-index: 5;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-close {
   position: absolute;
   top: 78px;
