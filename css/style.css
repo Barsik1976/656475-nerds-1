@@ -174,7 +174,13 @@ header {
   width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
+  border: 2px solid red;
 }
+
+.sliders input {
+  display: block;
+}
+
 
 
 
@@ -252,6 +258,7 @@ header {
 .slider-list {
   position: relative;
   text-align: left;
+  padding-top: 20px;
 }
 
 .slider-list h3 {
@@ -308,20 +315,22 @@ header {
 .slider-item1 {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 86% -12px;
-  background-clip: 
+  background-position: 86% 0px;
+  border: 2px solid yellow;
 }
 
 .slider-item2 {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 92% -29px;
+  background-position: 92% -20px;
+  border: 2px solid yellow;
 }
 
 .slider-item3 {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 91% -13px;
+  background-position: 91% 0px;
+  border: 2px solid yellow;
 }
 
 .btn-more {
