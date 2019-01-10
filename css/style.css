@@ -1686,6 +1686,10 @@ footer .wrap-general {
   display: block;
 }
 
+.modal-error {
+  
+}
+
 .modal-close {
   position: absolute;
   top: 78px;
