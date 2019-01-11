@@ -1674,6 +1674,8 @@ footer .wrap-general {
 
 .modal-show {
   display: block;
+  animation-name: bounce;
+  animation-duration: 0.7s;
 }
 
 .modal-error {
@@ -1866,3 +1868,11 @@ p {
   background-color: #d7373b;
   border-top: 3px solid #c13135;
 }
+
+@keyframes bounce {
+  0% {transform: translatey(-1000px);}
+  70% {transform: translatey(70px);}
+  90% {transform: translatey(30px);}
+  100% {transform: translatey(10);}
+}
+
