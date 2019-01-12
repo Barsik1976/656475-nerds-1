@@ -6,12 +6,13 @@ var close = popup.querySelector(".modal-close");
 var form = popup.querySelector(".contact-form");
 var login = popup.querySelector("[name=full-name]");
 var mail = popup.querySelector("[name=mail]");
+var text = popup.querySelector("[name=text]");
 
 var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("full-name");
+  storage = localStorage.getItem("login");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -31,12 +32,15 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
   if (!login.value || !mail.value) {
     evt.preventDefault();
-    console.log("Нужно ввести имя и e-mail");
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.getItem("login", "login.value");
