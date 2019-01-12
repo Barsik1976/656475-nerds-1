@@ -1729,7 +1729,7 @@ footer .wrap-general {
   background-color: #ffeeee;
 }
 
-.contact-form h3 {
+.modal h3 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -1783,28 +1783,6 @@ p {
   outline: none;
 }
 
-.contact-form input[type="text"]:invalid,
-.contact-form textarea:invalid {
-  border: 2px solid;
-}
-
-.contact-form input[type="text"]:invalid::-webkit-input-placeholder,
-.contact-form textarea:invalid::-webkit-input-placeholder {
-  color: #e74246;
-}
-.contact-form input[type="text"]:invalid:-ms-input-placeholder,
-.contact-form textarea:invalid:-ms-input-placeholder {
-  color: #e74246;
-}
-.contact-form input[type="text"]:invalid::-ms-input-placeholder,
-.contact-form textarea:invalid::-ms-input-placeholder {
-  color: #e74246;
-}
-.contact-form input[type="text"]:invalid::placeholder,
-.contact-form textarea:invalid::placeholder {
-  color: #e74246;
-}
-
 .contact-form input[type="text"]:hover {
   font-weight: normal;
   color: #a1a1a1;
@@ -1839,8 +1817,8 @@ p {
   outline: none;
 }
 
-.contact-form input[type="text"]:required:invalid,
-.contact-form textarea:invalid {
+.contact-form input[type="text"]:required:valid,
+.contact-form textarea:required:valid {
   color: #e74246;
   border: 2px #e74246 solid;
 }
