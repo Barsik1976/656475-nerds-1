@@ -5,7 +5,7 @@
     <title>Нердс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
       <header class="wrap-index">
@@ -133,7 +133,7 @@
             <div class="container">
                 <h3>Nerds design studio</h3>
                   <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p> 
-                  <p class="adress-phone">тел. +7 (812) 275-75-75</p>
+                  <p class="adress-phone" x-ms-format-detection="none">тел. +7 (812) 275-75-75</p>
                   <a class="btn-writeus" href="#letter" title="напишите нам">Напишите нам</a>
               </div>
         </div>
@@ -172,21 +172,21 @@
               <div class="fields-anketa">
                 <p>
                   <label for="user-name">Ваше имя:</label>
-                  <input id="user-name" name="full-name" type="text" placeholder="Имя Фамилия" required />
+                  <input id="user-name" name="full-name" type="text" placeholder="Имя Фамилия">
                 </p>
                 <p class="text-anketa">
                   <label for="user-mail">Ваш e-mail:</label>
-                  <input id="user-mail" name="mail" type="text" placeholder="email@example.com" required />
+                  <input id="user-mail" name="mail" type="email" placeholder="email@example.com">
                 </p>
               </div>
                 <p>
                   <label for="user-letter">Текст письма:</label>
-                  <textarea id="user-letter" name="text" placeholder="В свободной форме" required /></textarea>
+                  <textarea id="user-letter" name="text" placeholder="В свободной форме"></textarea>
                 </p>
                 <input class="btn-writeus btn-send" type="submit" value="Отправить">
               </form>
             <button class="modal-close" type="button" aria-label="Close">Закрыть</button>
         </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

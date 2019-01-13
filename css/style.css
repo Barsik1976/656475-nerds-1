@@ -172,9 +172,8 @@ header {
 }
 
 .sliders input {
-  display: block;
+  display: none;
 }
-
 
 
 
@@ -526,6 +525,7 @@ header {
 }
 
 .visually-hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -630,6 +630,7 @@ header {
 
 .table-percent {
   display: table;
+  position: relative;
   width: 100%;
   border-collapse: collapse;
   margin-top: 37px;
@@ -646,12 +647,9 @@ th {
   font-family: inherit;
   font-weight: normal;
   line-height: 18px;
+  text-align: left;
   padding: 0;
   padding-top: 14px;
-}
-
-.table-percentn {
-  position: relative;
 }
 
 td span {
@@ -774,7 +772,7 @@ td span {
 
 .left-column {
   margin-left: 20px;
-  margin-top: 56px;
+  margin-top: 54px;
 }
 
 .left-column fieldset, ul {
@@ -1037,7 +1035,7 @@ fieldset.properties {
 
 .right-column {
   margin-left: 140px;
-  margin-top: 59px;
+  margin-top: 57px;
 }
 
 .wrap-category {
@@ -1249,8 +1247,8 @@ fieldset.properties {
   border: 2px #e5e5e5 solid;
 }
 
-.banners-item:hover img,
-.banners-item:focus img {
+img.banners-item:hover,
+img.banners-item:focus {
   border: 2px none solid;
 }
 
@@ -1353,7 +1351,7 @@ div .price-sort {
   font-family: inherit;
   font-weight: 500;
   line-height: 50px;
-  margin-top: 30px;
+  margin-top: 31px;
   margin-right: 20px;
   font-size: 16px;
   text-transform: uppercase;
@@ -1579,7 +1577,7 @@ footer .wrap-general {
       -ms-flex-align: center;
           align-items: center;
   top: 119px;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
   left: 20px;
   right: 240px;
 }
@@ -1701,7 +1699,7 @@ footer .wrap-general {
 .modal-error {
   display: block;
   animation-name: shake;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
 }
 
 .modal-close {
@@ -1791,7 +1789,8 @@ p {
   margin-bottom: 9px;
 }
 
-.contact-form input[type="text"] {
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
   font-family: inherit;
   font-weight: normal;
   color: #a1a1a1;
@@ -1805,7 +1804,8 @@ p {
   outline: none;
 }
 
-.contact-form input[type="text"]:hover {
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover {
   font-weight: normal;
   color: #a1a1a1;
   border: 2px #b4b9bb solid;
@@ -1827,20 +1827,23 @@ p {
 }
 
 .contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
   color: #444444;
   border: 2px #000000 solid;
 }
 
 .contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
 .contact-form textarea:hover {
   color: #a1a1a1;
   border: 2px #b4b9bb solid;
   outline: none;
 }
 
-.contact-form input[type="text"]:required:valid,
-.contact-form textarea:required:valid {
+.contact-form input[type="text"]:invalid,
+.contact-form input[type="email"]:invalid,
+.contact-form textarea:invalid {
   color: #e74246;
   border: 2px #e74246 solid;
 }
@@ -1887,7 +1890,10 @@ p {
 }
 
 @keyframes shake {
-  0%, 100% {transform: translateX(0);}
-  10%, 30%, 50%, 70%, 90% {transform: translateX(10px);}
-  20%, 40%, 60%, 80% {transform: translateX(-10px);}
+  0% {transform: translateY(-50%) translateX(-50%) rotate(3deg);}
+  30% {transform: translateY(-50%) translateX(-50%) rotate(-3deg);}
+  60% {transform: translateY(-50%) translateX(-50%) rotate(3deg);}
+  100% {transform: translateY(-50%) translateX(-50%) rotate(-3deg);}
 }
+
+
