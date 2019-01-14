@@ -15,14 +15,6 @@ body {
   list-style: none;
 }
 
-main {
-  display: block;
-}
-
-input {
-  font-family: inherit;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -325,16 +317,17 @@ header {
 .btn-more {
   display: block;
   font-family: inherit;
-  line-height: 50px;
+  line-height: 18px;
   width: 240px;
-  height: 50px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
   background-color: #fb565a;
   border-radius: 5px;
-  margin-top: 38px; 
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin-top: 38px;
 }
 
 .btn-more:hover {
@@ -349,8 +342,8 @@ header {
 }
 
 .btn-more:active {
-  height: 47px;
-  line-height: 45px;
+  line-height: 18px;
+  padding-top: 16px;
   color: #e37376;
   background-color: #d7373b;
   border-top: 3px solid #c13135;
@@ -454,15 +447,16 @@ header {
 .btn-order1 {
   display: block;
   font-family: inherit;
-  line-height: 50px;
+  line-height: 18px;
   width: 160px;
-  height: 50px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
   background-color: #fb565a;
   border-radius: 5px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   margin-top: 31px;
   cursor: pointer;
 }
@@ -474,8 +468,8 @@ header {
 }
 
 .btn-order1:active {
-  height: 47px;
-  line-height: 45px;
+  line-height: 18px;
+  padding-top: 16px;
 }
 
 .btn-order1:hover,
@@ -637,13 +631,13 @@ header {
   text-align: left;
 }
 
-td {
+.table-percent td {
   font-family: inherit;
   font-size: 45px;
   font-weight: 700;
 }
 
-th {
+.table-percent th {
   font-family: inherit;
   font-weight: normal;
   line-height: 18px;
@@ -652,7 +646,7 @@ th {
   padding-top: 14px;
 }
 
-td span {
+.table-percent span {
   display: inline-block;
   font-size: 65%;
   vertical-align: top;
@@ -760,7 +754,7 @@ td span {
           align-items: flex-start;
 }
 
-.container-inner fieldset, input {
+.container-inner fieldset {
   border: none;
 }
 
@@ -977,7 +971,7 @@ fieldset.properties {
 }
 
 .filters-item input[type="radio"]:checked + label::before {
-  background-image: url('../img/radio-on.svg');
+  background-image: url("../img/radio-on.svg");
 }
 
 .filters-item input[type="checkbox"] + label::before {
@@ -996,14 +990,15 @@ fieldset.properties {
 .btn-show {
   display: block;
   font-family: inherit;
-  line-height: 50px;
   font-weight: 500;
+  line-height: 18px;
+  width: 260px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
   background-color: #eeeeee;
-  width: 260px;
-  height: 50px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   border-radius: 5px;
   border: none;
   outline: 0;
@@ -1022,10 +1017,10 @@ fieldset.properties {
 }
 
 .btn-show:active {
-  height: 47px;
-  line-height: 45px;
+  line-height: 18px;
   color: #959595;
   background-color: #d5d5d5;
+  padding-top: 16px;
   border-top: 3px #bfbfbf solid;
 }
 
@@ -1208,14 +1203,10 @@ fieldset.properties {
 }
 
 .site-item {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.site-item {
   display: block;
   position: relative;
   width: 356px;
+  margin-bottom: 30px;
 }
 
 .banners-item::before {
@@ -1256,11 +1247,13 @@ img.banners-item:focus {
 /* Прайс на баннере */
 
 .banner-info {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
   width: 360px;
-  height: 230px;
+  min-height: 230px;
+  max-height: 576px;
   font-family: inherit;
   background-color: #eeeeee;
   text-align: center;
@@ -1273,44 +1266,43 @@ img.banners-item:focus {
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
   margin-top: 26px;
+  margin-bottom: 25px;
+  flex-shrink: 0;
 }
 
 .product-zag a {
   display: block;
 }
 
-.price {
-  position: absolute;
-  top: 74px;
-  right: 40px;
-  left: 40px;
-}
-
-.price p {
+.price div {
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
   color: #666666;
   text-align: center;
-  margin-top: -5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+  overflow: auto;
 }
 
-div .price-sort {
+.price-sort {
   display: block;
   font-size: 16px;
   font-weight: normal;
-  line-height: 50px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   width: 200px;
-  height: 50px;
   border-radius: 5px;
   text-align: center;
-  background-color: #fb565a;
+  backgroun-color: #fb565a;
+  padding-top: 19px;
+  padding-bottom: 19px;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: auto;
+  flex-shrink: 0;
 }
 
 .price-sort:hover {
@@ -1325,8 +1317,8 @@ div .price-sort {
 }
 
 .price-sort:active {
-  height: 47px;
-  line-height: 47px;
+  line-height: 18px;
+  padding-top: 16px;
   background-color: #d7373b;
   border-top: 3px solid #c13135;
 }
@@ -1350,7 +1342,7 @@ div .price-sort {
       flex-wrap: wrap;
   font-family: inherit;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 18px;
   margin-top: 31px;
   margin-right: 20px;
   font-size: 16px;
@@ -1363,9 +1355,10 @@ div .price-sort {
 .pagination-item a {
   display: block;
   min-width: 50px;
-  height: 50px;
   background-color: #eeeeee;
   border-radius: 5px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   margin-right: 10px;
   margin-bottom: 10px; 
 }
@@ -1374,9 +1367,10 @@ div .price-sort {
 .pagination-item:first-child a {
   display: block;
   min-width: 260px;
-  height: 50px;
   background-color: #eeeeee;
   text-align: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
   margin-right: 10px;
 }
 
@@ -1388,10 +1382,9 @@ div .price-sort {
 
 .pagination-item a:active {
   min-width: 50px;
-  height: 47px;
-  line-height: 45px;
   color: #959595;
   background-color: #d5d5d5;
+  padding-top: 16px;
   border-radius: 5px;
   border-top: 3px #bfbfbf solid;
 }
@@ -1399,21 +1392,21 @@ div .price-sort {
 .pagination-item:last-child a:active,
 .pagination-item:first-child a:active {
   min-width: 260px;
-  height: 47px;
-  line-height: 45px;
   text-align: center;
   color: #959595;
   background-color: #d5d5d5;
+  padding-top: 16px;
   border-top: 3px #bfbfbf solid;
 }
 
 .pagination-item-active a {
   display: block;
   min-width: 44px;
-  height: 44px;
-  line-height: 44px;
+  line-height: 18px;
   color: #000000;
   background-color: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 5px;
   border: 3px #dbdbdb solid;
   margin-right: 10px;
@@ -1458,7 +1451,7 @@ div .price-sort {
   border: 0;
 }
 
-footer .wrap-general {
+footer > .wrap-general {
   position: relative;
 }
 
@@ -1501,15 +1494,16 @@ footer .wrap-general {
 .btn-writeus {
   display: block;
   font-family: inherit;
-  line-height: 50px;
+  line-height: 18px;
+  width: 218px;
   font-weight: 500;
   text-transform: uppercase;
-  height: 50px;
-  text-align: center;
-  width: 218px;
-  border-radius: 5px;
   color: #ffffff;
+  text-align: center;
   background-color: #fb565a;
+  border-radius: 5px;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .btn-writeus:focus {
@@ -1525,36 +1519,12 @@ footer .wrap-general {
 }
 
 .btn-writeus:active {
-  height: 47px;
-  line-height: 45px;
+  padding-top: 16px;
   color: #e37376;
   background-color: #d7373b;
   border-top: 3px solid #c13135;
 }
 
-.btn-send {
-  display: block;
-  width: 260px;
-  font-family: inherit;
-  line-height: 50px;
-  font-weight: 500;
-  text-transform: uppercase;
-  height: 50px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #fb565a;
-  border-radius: 5px;
-  margin-top: 47px;
-}
-
-.btn-send:active {
-  display: block;
-  height: 47px;
-  line-height: 45px;
-  color: #e37376;
-  background-color: #d7373b;
-  border-top: 3px solid #c13135;
-}
 
 
 
@@ -1773,13 +1743,8 @@ footer .wrap-general {
   margin-bottom: 36px;
 }
 
-.text-anketa {
+.personal-email {
   margin-left: 40px;
-}
-
-p {
-  display: block;
-  margin: 0px;
 }
 
 .contact-form label {
@@ -1849,11 +1814,7 @@ p {
 }
 
 .btn-send {
-  display: block;
   width: 260px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
   margin-top: 47px;
 }
 
@@ -1862,25 +1823,14 @@ p {
 }
 
 .btn-send:active {
-  height: 47px;
-  line-height: 45px;
-  border-top: 3px solid #c13135;
-}
-
-.btn-writeus:focus {
-  background-color: #e74246;
-  outline: 2px;
-  -webkit-box-shadow: 0px 0px 5px #4D90FE;
-          box-shadow: 0px 0px 5px #4D90FE;
-}
-
-.btn-writeus:active {
-  height: 47px;
-  line-height: 45px;
+  display: block;
   color: #e37376;
   background-color: #d7373b;
+  padding-top: 16px;
   border-top: 3px solid #c13135;
 }
+
+
 
 @keyframes bounce {
   0% {transform: translateY(-100%) translateX(-50%);}
