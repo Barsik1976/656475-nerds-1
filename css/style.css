@@ -1082,11 +1082,8 @@ fieldset.properties {
   margin-bottom: 15px; 
 }
 
-.container-category {
-  width: 300px;
-}
-
 .category-type {
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,6 +1100,10 @@ fieldset.properties {
 .category-type li {
   padding-bottom: 15px;
   margin-left: 25px;
+}
+
+.category-type li:first-child {
+  margin-left: 0;
 }
 
 .category-type a {
@@ -1453,10 +1454,6 @@ img.banners-item:focus {
   border: 0;
 }
 
-footer > .wrap-general {
-  position: relative;
-}
-
 .container {
   position: absolute;
   background-color: #ffffff;
@@ -1532,8 +1529,8 @@ footer > .wrap-general {
 
 /* Блок Кнопки социальных сетей в Footer */
 
-.social-network {
-  position: absolute;
+
+.footer-general .wrap-general {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1548,17 +1545,13 @@ footer > .wrap-general {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 119px;
-  padding-bottom: 70px;
-  left: 20px;
-  right: 240px;
-}
-
-.container-social {
-  width: 260px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  margin-top: 123px;
 }
 
 .logo-network {
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1612,13 +1605,7 @@ footer > .wrap-general {
 }
 
 .be-friends {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-right: 240px;
 }
 
 .footer-slogan {
@@ -1627,11 +1614,10 @@ footer > .wrap-general {
   font-weight: 500;
   line-height: 36px;
   margin: 0;
-  margin-top: -7px;
   margin-bottom: 8px;
 }
 
-.be-friends p {
+.wrap-general > p {
   font-family: inherit;
   font-weight: normal;
   line-height: 22px;
