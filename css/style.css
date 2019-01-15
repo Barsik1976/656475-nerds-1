@@ -1033,24 +1033,6 @@ fieldset.properties {
   margin-top: 57px;
 }
 
-.wrap-category {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 20px;
-  margin-bottom: 41px;
-}
-
 .sort-category {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1062,11 +1044,12 @@ fieldset.properties {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 700px;
+  width: 760px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-right: 0px;
+  margin-bottom: 41px;
 }
 
 .sort-category h3 {
@@ -1083,7 +1066,7 @@ fieldset.properties {
 }
 
 .category-type {
-  width: 300px;
+  width: 325px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,10 +1083,6 @@ fieldset.properties {
 .category-type li {
   padding-bottom: 15px;
   margin-left: 25px;
-}
-
-.category-type li:first-child {
-  margin-left: 0;
 }
 
 .category-type a {
