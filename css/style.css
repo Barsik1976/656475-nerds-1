@@ -163,10 +163,6 @@ img {
   padding-left: 20px;
 }
 
-.sliders input {
-  display: ;
-}
-
 
 
 /* Блок кнопок Слайдеров */
@@ -324,7 +320,7 @@ img {
   color: #ffffff;
   text-align: center;
   background-color: #fb565a;
-  border-radius: 4px;
+  border-radius: 3px;
   padding-top: 18px;
   padding-bottom: 18px;
   margin-top: 37px;
@@ -456,7 +452,7 @@ img {
   color: #ffffff;
   text-align: center;
   background-color: #fb565a;
-  border-radius: 4px;
+  border-radius: 3px;
   padding-top: 18px;
   padding-bottom: 18px;
   margin-top: 30px;
@@ -558,7 +554,7 @@ img {
 }
 
 .about-studio {
-  width: 700px;
+  width: 680px;
   margin-bottom: 50px;
   margin-top: 75px;
 }
@@ -609,6 +605,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 40px;
+  margin-left: 120px;
 }
 
 .accuracy h5 {
@@ -627,7 +624,7 @@ img {
 .table-percent {
   display: table;
   position: relative;
-  width: 100%;
+  width: 360px;
   border-collapse: collapse;
   margin-top: 37px;
   text-align: left;
@@ -661,7 +658,6 @@ img {
 
 
 .container-partners {
-  width: 1085px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 28px; 
@@ -783,7 +779,7 @@ img {
   height: 80px;
   margin-top: 29px;
   background-color: #eeeeee;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .scale {
@@ -807,7 +803,7 @@ img {
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 4px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -859,7 +855,7 @@ img {
   text-align: center;
   color: #283136;
   border: none;
-  border-radius: 4px;
+  border-radius: 3px;
   background-color: #f1f1f1;
 }
 
@@ -1002,7 +998,7 @@ fieldset.properties {
   background-color: #eeeeee;
   padding-top: 18px;
   padding-bottom: 18px;
-  border-radius: 4px;
+  border-radius: 3px;
   border: none;
   outline: 0;
   cursor: pointer;
@@ -1156,6 +1152,7 @@ fieldset.properties {
 
 
 
+
 /* Баннеры-блок правой колонки */
 
 .banners-list {
@@ -1212,12 +1209,6 @@ fieldset.properties {
   opacity: 1;
 }
 
-.site-item:hover .banner-info,
-.site-item:focus .banner-info {
-  display: block;
-  position: absolute;
-}
-
 .banners-item img {
   border: 2px #e5e5e5 solid;
 }
@@ -1250,10 +1241,10 @@ img.banners-item:focus {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-  z-index: 10;
+  z-index: 4;
 }
 
-.site-item:not(:hover) .banner-info {
+.site-item:not(:hover):not(:focus) .banner-info {
   display: none;
 }
 
@@ -1299,7 +1290,7 @@ img.banners-item:focus {
   color: #ffffff;
   text-transform: uppercase;
   width: 200px;
-  border-radius: 4px;
+  border-radius: 3px;
   text-align: center;
   background-color: #fb565a;
   padding-top: 19px;
@@ -1327,6 +1318,7 @@ img.banners-item:focus {
   background-color: #d7373b;
   border-top: 3px solid #c13135;
 }
+
 
 
 
@@ -1362,7 +1354,7 @@ img.banners-item:focus {
   min-width: 50px;
   color: #000000;
   background-color: #eeeeee;
-  border-radius: 4px;
+  border-radius: 3px;
   padding-top: 17px;
   padding-bottom: 17px;
   margin-right: 10px;
@@ -1391,7 +1383,7 @@ img.banners-item:focus {
   color: #959595;
   background-color: #d5d5d5;
   padding-top: 14px;
-  border-radius: 4px;
+  border-radius: 3px;
   border-top: 3px #bfbfbf solid;
 }
 
@@ -1413,7 +1405,7 @@ img.banners-item:focus {
   background-color: #ffffff;
   padding-top: 14px;
   padding-bottom: 14px;
-  border-radius: 4px;
+  border-radius: 3px;
   border: 3px #dbdbdb solid;
   margin-right: 10px;
   list-style: none;
@@ -1466,7 +1458,7 @@ img.banners-item:focus {
   padding-bottom: 46px;
   top: 105px;
   left: calc(50% - 580px);
-  z-index: 4;
+  z-index: 5;
 }
 
 .container h3 {
@@ -1503,7 +1495,7 @@ img.banners-item:focus {
   color: #ffffff;
   text-align: center;
   background-color: #fb565a;
-  border-radius: 4px;
+  border-radius: 3px;
   padding-top: 18px;
   padding-bottom: 18px;
 }
@@ -1655,7 +1647,7 @@ img.banners-item:focus {
           box-shadow: 0 8px 50px 5px #595a5a;
   overflow: auto;
   margin: auto;
-  z-index: 5;
+  z-index: 6;
 }
 
 .modal-show {
@@ -1762,7 +1754,7 @@ img.banners-item:focus {
   padding-left: 14px;
   padding-right: 14px;
   border: 2px #d7dcde solid;
-  border-radius: 4px;
+  border-radius: 3px;
   margin: 0px;
   outline: none;
 }
@@ -1781,7 +1773,7 @@ img.banners-item:focus {
   width: 728px;
   min-height: 90px;
   border: 2px #d7dcde solid;
-  border-radius: 4px;
+  border-radius: 3px;
   padding-top: 12px;
   padding-left: 14px;
   padding-right: 14px;
@@ -1844,5 +1836,3 @@ img.banners-item:focus {
   60% {transform: translateY(-50%) translateX(-50%) rotate(3deg);}
   100% {transform: translateY(-50%) translateX(-50%) rotate(-3deg);}
 }
-
-
