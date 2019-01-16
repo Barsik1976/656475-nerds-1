@@ -1621,15 +1621,15 @@ img.banners-item:focus {
 .modal {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 51%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding-top: 70px;
+  padding-top: 69px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 84px;
+  padding-bottom: 81px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 8px 50px 5px #595a5a;
           box-shadow: 0 8px 50px 5px #595a5a;
