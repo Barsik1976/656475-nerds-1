@@ -539,7 +539,7 @@ img {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -634,15 +634,22 @@ img {
   font-family: inherit;
   font-size: 45px;
   font-weight: 700;
+  padding: 0;
 }
+
+.table-percent td:last-child,
+.table-percent th:last-child {
+  padding-right: 0;
+}
+
 
 .table-percent th {
   font-family: inherit;
   font-weight: normal;
   line-height: 18px;
   text-align: left;
-  padding: 0;
   padding-top: 14px;
+  padding-right: 23px;
 }
 
 .table-percent span {
