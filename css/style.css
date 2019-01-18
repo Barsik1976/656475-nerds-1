@@ -1732,7 +1732,7 @@ img.banners-item:focus {
   margin: 0;
 }
 
-.fields-anketa {
+.fields-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1747,7 +1747,7 @@ img.banners-item:focus {
   margin-bottom: 17px;
 }
 
-.personal-email {
+.email-profile {
   margin-left: 40px;
 }
 
