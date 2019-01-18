@@ -1388,7 +1388,7 @@ img.banners-item:focus {
 }
 
 .pagination-item a:active {
-  min-width: 50px;
+  min-width: 40px;
   color: #959595;
   background-color: #d5d5d5;
   padding-top: 14px;
@@ -1398,7 +1398,7 @@ img.banners-item:focus {
 
 .pagination-item:last-child a:active,
 .pagination-item:first-child a:active {
-  min-width: 260px;
+  min-width: 250px;
   text-align: center;
   color: #959595;
   background-color: #d5d5d5;
